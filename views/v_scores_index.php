@@ -15,3 +15,6 @@
 		</article>
 
 	<?php endforeach; ?>
+
+
+	<!-- here put the high scores - data table -->

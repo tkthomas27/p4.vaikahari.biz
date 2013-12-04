@@ -5,17 +5,16 @@
 		<!-- profile editor head -->
 		<div class='proedithead'>
 
-		Profile Editor: <?=$user->first_name?> <?=$user->last_name?>
+		Editing Profile for <?=$user->first_name?> <?=$user->last_name?>
 
 		</div>
 
 		<!-- profile editor form -->
 		<form class='profileedit' method='POST' action='/users/p_profileedit'>
 
-			Home <input type='text' name='home'><br>
-			Favorite Season <input type='text' name='season'><br>
-			Favorite Thing <input type='text' name='favorite'><br>
-			Best Friends<input type='text' name='friends'><br>
+			Location <input type='text' name='location'><br>
+			Ishta Devata <input type='text' name='devata'><br>
+			Avatar <input type='text' name='avatar'><br>
 
 			<input type='submit' value='Submit Edit' class='proeditsubmit'>
 

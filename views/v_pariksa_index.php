@@ -1,0 +1,1 @@
+v_pariksa_index.php

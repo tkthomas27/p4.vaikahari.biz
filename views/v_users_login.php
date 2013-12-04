@@ -2,7 +2,7 @@
 	<!-- login head -->
 	<div class='prohead'>
 
-		Please, Sign In
+		Please, Log In
 
 	</div>
 

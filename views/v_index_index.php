@@ -25,6 +25,7 @@
 		<div class="nouser">
 
 			Please <a href='/users/signup'>Sign Up</a> or <a href='/users/login'>Log In</a>
+
 							
 		</div>
 

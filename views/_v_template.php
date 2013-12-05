@@ -8,8 +8,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
 																											 
 	<!-- Controller Specific JS/CSS -->
-	<link rel="stylesheet" href="/css/sample-app.css" type="text/css">
+	<link rel="stylesheet" href="/css/style.css" type="text/css">
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
+
+	<!-- jQuery standard -->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<!-- jQuery UI -->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
 					
 </head>
 
@@ -43,6 +49,7 @@
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
 	
 	</div>
-	
+
+<script src="/js/sample-app.js"></script>
 </body>
 </html>

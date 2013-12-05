@@ -23,7 +23,7 @@
 		<div class='edit'>
 
 			<a href="/users/profileedit">Edit Profile</a><br>
-			<a href="/users/profileedit">Edit Password</a><br>
+			<a href="/users/pwdchange">Edit Password</a><br>
 			
 		</div>
 

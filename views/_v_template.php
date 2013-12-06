@@ -9,6 +9,9 @@
 																											 
 	<!-- Controller Specific JS/CSS -->
 	<link rel="stylesheet" href="/css/style.css" type="text/css">
+
+
+
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
 
 	<!-- jQuery standard -->
@@ -21,32 +24,35 @@
 
 <body>	
 
-	<div class='wrap'>
-	<!-- main menu on the left of the screen-->
-	<nav>
-		<menu class="nav">
-			<li><a href='/'>Main</a></li>       
-				 <?php if($user): ?>
-					<li><a href='/users/profile'>Profile</a></li>
-					<li><a href='/socres/index'>High Scores</a></li>
-				<?php else: ?>
-					<li><a href='/users/signup'>Sign Up</a></li>
-					<li><a href='/users/login'>Log In</a></li>
-				<?php endif; ?>
-		</menu>
-	</nav>
+	<div id='nav'>
+		<ul id="navigation">
+			<li><a href='/'>Home</a></li>       
+			<?php if($user): ?>
+				<li><a href='/users/profile'>Profile</a></li>
+				<li><a href='/socres/index'>Scores</a></li>
+			<?php else: ?>
+				<li><a href='/users/signup'>Sign Up</a></li>
+				<li><a href='/users/login'>Log In</a></li>
+			<?php endif; ?>
+		</ul>
+	</div>
 
 
-	<!-- log confirming user is logged in -->
-	<?php if($user): ?>
-		<p class="log">You are logged in as <?=$user->first_name?> <?=$user->last_name?></p><br>
-	<?php endif; ?>
 
-	<br><br>
 
+
+<div id="body">
 	<?php if(isset($content)) echo $content; ?>
 
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
+	<!-- log confirming user is logged in -->
+	<?php if($user): ?>
+	<aside>
+		<p class="log"><?=$user->first_name?> <?=$user->last_name?></p>
+		<p class="log"><?=$user->avatara?></p>
+		<p class="log"><?=$user->devata?></p>
+	</aside>
+	<?php endif; ?>
 	
 	</div>
 

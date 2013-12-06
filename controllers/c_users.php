@@ -156,13 +156,13 @@ class users_controller extends base_controller {
 	public function p_profileedit() {
 
 		//accept the information from the field
-		$new_home = $_POST['home'];
-		$new_season = $_POST['season'];
-		$new_favorite = $_POST['favorite'];
-		$new_friends = $_POST['friends'];
+		$new_city = $_POST['city'];
+		$new_state = $_POST['state'];
+		$new_avatara = $_POST['avatara-radio'];
+		$new_devata = $_POST['devata-radio'];
 
 		//set incoming data as an array
-		$prodata = Array('home'=>$new_home,'season'=>$new_season,'favorite'=>$new_favorite,'friends'=>$new_friends);
+		$prodata = Array('city'=>$new_city,'state'=>$new_state,'avatara'=>$new_avatara,'devata'=>$new_devata);
 
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->update('users',$prodata,'Where user_id ='.$this->user->user_id);

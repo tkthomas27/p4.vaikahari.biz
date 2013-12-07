@@ -48,9 +48,12 @@
 	<!-- log confirming user is logged in -->
 	<?php if($user): ?>
 	<aside>
-		<p class="log"><?=$user->first_name?> <?=$user->last_name?></p>
-		<p class="log"><?=$user->avatara?></p>
-		<p class="log"><?=$user->devata?></p>
+		<p class="log">
+			<img src="<?=$user->devata?>" class='side-devata'> <br>
+			<?=$user->first_name?> <?=$user->last_name?> <br>
+			<?=$user->city?>, <?=$user->state?> <br><br>
+			<img src="<?=$user->avatara?>" class='side-avatar'> <br>
+		</p>
 	</aside>
 	<?php endif; ?>
 	

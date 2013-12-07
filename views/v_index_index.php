@@ -19,7 +19,10 @@
 			
 			Hello <?=$user->first_name;?><br>
 
-			<a href="/pariksa/index">Play</a><br>
+			<form action="/pariksa/p_init_game" method='POST'>
+				Level <input type="text" name='vyanjana'>
+				<input type='submit' value='Choose Level'>
+			</form>
 			<button>Instructions</button><br>
 			<button>Profile</button><br>
 			<button>Scores</button>

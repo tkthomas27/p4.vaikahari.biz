@@ -12,7 +12,7 @@ body,html {
 #body 
 {
 width:800px;
-margin:250px;
+margin:300px;
 position: absolute; 
 margin-top:80px;
 font-family:verdana,sans-serif;
@@ -30,7 +30,8 @@ box-shadow: 0px 1px 50px #5E5E5E;
 position:fixed;
 top:0px;
 text-align: left;
-padding-left: 200px;
+padding-left: 250px;
+z-index: 1000;
 }
 
 #navigation
@@ -56,22 +57,53 @@ li
 
 aside
 {
-    position:fixed;
-    width: 200px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: 1px solid #111;
+	position:fixed;
+	width: 250px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: 1px solid #111;
 }
 
 aside p
 {
-    position: absolute;
-    height: 200px;
-    top: 30%;
-    margin: -100px 0;
-padding-left: 40px;
+	position: absolute;
+	height: 200px;
+	top: 150px;
+	margin: -100px 0;
+	padding-left: 40px;
 }
+
+.side-avatar{
+	display: block;
+	width: 125px;
+	height: 125px;
+	margin: 1em auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+.side-devata{
+	display: block;
+	width: 125px;
+	height: 125px;
+	margin: 1em auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
 
 .landing{
 margin-left: 350px;
@@ -83,6 +115,42 @@ text-align: center;
   font-size: 50px;
 }
 
+
+/*Profile Page*/
+
+.avatar-profile-position{
+	float:right;
+}
+
+.profile-avatar{
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin: 1em auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-devata{
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin: 1em auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
 
 
 
@@ -106,7 +174,7 @@ input[type=radio]:checked + img{
 }
 
 .content {
-    display: none;
+	display: none;
 }
 
 .thumbnail{

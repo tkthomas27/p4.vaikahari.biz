@@ -3,3 +3,5 @@ $('.trigger').click(function() {
     $('.' + $(this).data('rel')).show();
     console.log('hello');
 });
+
+

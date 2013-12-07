@@ -2,23 +2,23 @@
 	<!-- if user is logged in, display their profile -->
 	<?php if(isset($user)): ?>
 
-		<div class="prohead">
 
-			<?=$user->first_name?> <?=$user->last_name?>
-
+		<div class="devata-profile-position">						
+			<img src="<?=$user->devata?>" class='profile-devata'><br>
+			Ishta Devata <br>
 		</div>
 
-		<div>
-			badges
-		</div>
-
-		<div class='prodetail'>
-
+		<div class='location-profile-position'>
+			<span class="profile-name"><?=$user->first_name?> <?=$user->first_name?></span>
 			Location: <?=$user->location?><br>
-			Ishta Devata: <?=$user->devata?><br>
-			Avatar: <?=$user->avatar?><br>
-
 		</div>
+
+		<div class="avatar-profile-position">
+			<img src="<?=$user->avatara?>" class='profile-avatar'><br>
+			Avatar <br>
+		</div>
+
+
 
 		<div class='edit'>
 

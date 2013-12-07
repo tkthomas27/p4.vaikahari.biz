@@ -25,47 +25,47 @@
 
 			<label class="avatara-radio" for="kurma-avatara">
 				<input id="kurma-avatara" type="radio" name="avatara-radio" class='kurma trigger' data-rel='kurma-desktop' value="/images/kurma_avatara.jpg"/>
-				<img src="/images/kurma_avataraa.jpg" class="thumbnail">
+				<img src="/images/kurma_avatara.jpg" class="thumbnail">
 			</label>
 
 			<label class="avatara-radio" for="varaha-avatara">
 				<input id="varaha-avatara" type="radio" name="avatara-radio" class='varaha trigger' data-rel='varaha-desktop' value="/images/varaha_avatara.jpg"/>
-				<img src="/images/varaha_avataraa.jpg" class="thumbnail">
+				<img src="/images/varaha_avatara.jpg" class="thumbnail">
 			</label>
 
 			<label class="avatara-radio" for="narasimha-avatara">
 				<input id="narasimha-avatara" type="radio" name="avatara-radio" class='narasimha trigger' data-rel='narasimha-desktop' value="/images/narasimha_avatara.jpg"/>
-				<img src="/images/narasimha_avataraa.jpg" class="thumbnail">
+				<img src="/images/narasimha_avatara.jpg" class="thumbnail">
 			</label>
 
 			<label class="avatara-radio" for="vamana-avatara">
 				<input id="vamana-avatara" type="radio" name="avatara-radio" class='vamana trigger' data-rel='vamana-desktop' value="/images/vamana_avatara.jpg"/>
-				<img src="/images/vamana_avataraa.jpg" class="thumbnail">
+				<img src="/images/vamana_avatara.jpg" class="thumbnail">
 			</label>
 
 			<label class="avatara-radio" for="parashurama-avatara">
 				<input id="parashurama-avatara" type="radio" name="avatara-radio" class='parashurama trigger' data-rel='parashurama-desktop' value="/images/parashurama_avatara.jpg"/>
-				<img src="/images/parashurama_avataraa.jpg" class="thumbnail">
+				<img src="/images/parashurama_avatara.jpg" class="thumbnail">
 			</label>
 
 			<label class="avatara-radio" for="rama-avatara">
 				<input id="rama-avatara" type="radio" name="avatara-radio" class='rama trigger' data-rel='rama-desktop' value="/images/rama_avatara.jpg"/>
-				<img src="/images/rama_avataraa.jpg" class="thumbnail">
+				<img src="/images/rama_avatara.jpg" class="thumbnail">
 			</label>
 
 			<label class="avatara-radio" for="krishna-avatara">
 				<input id="krishna-avatara" type="radio" name="avatara-radio" class='krishna trigger' data-rel='krishna-desktop' value="/images/krishna_avatara.jpg"/>
-				<img src="/images/krishna_avataraa.jpg" class="thumbnail">	
+				<img src="/images/krishna_avatara.jpg" class="thumbnail">	
 			</label>
 
 			<label class="avatara-radio" for="buddha-avatara">
 				<input id="buddha-avatara" type="radio" name="avatara-radio" class='buddha trigger' data-rel='buddha-desktop' value="/images/buddha_avatara.jpg"/>
-				<img src="/images/buddha_avataraa.jpg" class="thumbnail">
+				<img src="/images/buddha_avatara.jpg" class="thumbnail">
 			</label>
 
 			<label class="avatara-radio" for="kalki-avatara">
 				<input id="kalki-avatara" type="radio" name="avatara-radio" class='kalki trigger' data-rel='kalki-desktop' value="/images/kalki_avatara.jpg"/>
-				<img src="/images/kalki_avataraa.jpg" class="thumbnail">
+				<img src="/images/kalki_avatara.jpg" class="thumbnail">
 			</label>
 		</div>
 

@@ -55,6 +55,7 @@
 			<img src="<?=$user->avatara?>" class='side-avatar'> <br>
 		</p>
 	</aside>
+
 	<?php endif; ?>
 	
 	</div>

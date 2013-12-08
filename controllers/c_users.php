@@ -37,7 +37,10 @@ class users_controller extends base_controller {
 		else {
 
 		//add a created time to users
-		$_POST['created']= Time::now();
+		$_POST['created'] = Time::now();
+
+		$_POST['devata'] = '/images/placeholder.gif';
+		$_POST['avatara'] = '/images/placeholder.gif';
 
 		//encode the password and create a token
 		$_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);

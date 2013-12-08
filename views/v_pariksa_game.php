@@ -17,6 +17,12 @@
 				<input type='submit' value='Quit'>
 			</form>
 
+			<br>
+
+			<form action="/pariksa/p_submit_game" method='POST'>
+				<input type='submit' value='submit'>
+			</form>
+
 		</div>
 
 	<!-- if user is not logged ask them to login or signup -->

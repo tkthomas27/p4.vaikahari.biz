@@ -20,12 +20,26 @@
 			Hello <?=$user->first_name;?><br>
 
 			<form action="/pariksa/p_init_game" method='POST'>
-				Level <input type="text" name='vyanjana'>
-				<input type='submit' value='Choose Level'>
+				<input type="radio" name="vyanjana" value="1">Level One <br>
+				<input type="radio" name="vyanjana" value="2">Level Two <br>
+				<input type="radio" name="vyanjana" value="3">Level Three <br>
+				<input type="radio" name="vyanjana" value="4">Level Four <br>
+				<input type="radio" name="vyanjana" value="5">Level Five <br>
+				<input type="radio" name="vyanjana" value="6">Level Six <br>
+				<input type="radio" name="vyanjana" value="7">Level Seven <br>
+				<input type="radio" name="vyanjana" value="8">Level Eight <br>
+
+				<input type="submit" value='Start Game'>
 			</form>
+			<br><br>
 			<button>Instructions</button><br>
 			<button>Profile</button><br>
 			<button>Scores</button>
+
+			<a href="/users/logout">Logout</a>
+
+
+			<br>
 
 		</div>
 

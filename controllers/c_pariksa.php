@@ -11,10 +11,10 @@ class pariksa_controller extends base_controller {
 
 		//insert this data to start a new game row
 		$new_date_play=Time::now();
-		$new_vyanjana=$_POST['vyanjana'];
+		$new_tattva=$_POST['tattva'];
 
 		//set incoming data as an array
-		$gamedata = Array('date_play'=>$new_date_play,'vyanjana'=>$new_vyanjana);
+		$gamedata = Array('date_play'=>$new_date_play,'tattva'=>$new_tattva);
 
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->update('users',$gamedata,'Where user_id ='.$this->user->user_id);
@@ -41,11 +41,11 @@ class pariksa_controller extends base_controller {
 
 
 		//accept the information from the field
-		$new_vyanjana = $_POST['vyanjana'];
+		$new_tattva = $_POST['tattva'];
 		$new_date_play =Time::now();
 
 		//set incoming data as an array
-		$scoredata = Array('vyanjana'=>$new_vyanjana,'date_play'=>$new_date_play);
+		$scoredata = Array('tattva'=>$new_tattva,'date_play'=>$new_date_play);
 
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->update('users',$scoredata,'Where user_id ='.$this->user->user_id);
@@ -55,16 +55,16 @@ class pariksa_controller extends base_controller {
 
 	}
 
-	public function p_submit_game(){
+	public function p_quit_game(){
 
 		$q_submit = 
 		'INSERT INTO scores ( 
-      		vyanjana, 
+      		tattva, 
       		score, 
       		date_play,
       		user_id) 
 		SELECT       		
-			vyanjana, 
+			tattva, 
       		score, 
       		date_play,
       		user_id
@@ -73,17 +73,11 @@ class pariksa_controller extends base_controller {
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->query($q_submit);
 
-		//route the user back to the profile page
-		Router::redirect('/pariksa/game');
-	}
-
-	public function p_quit_game(){
-
 		$del_score = '';
 		$del_date_play ='';
-		$del_vyanjana = '';
+		$del_tattva = '';
 
-		$deldata = Array('vyanjana'=>$del_vyanjana,'date_play'=>$del_date_play,'score'=>$del_score);
+		$deldata = Array('tattva'=>$del_tattva,'date_play'=>$del_date_play,'score'=>$del_score);
 
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->update('users',$deldata,'Where user_id ='.$this->user->user_id);

@@ -20,14 +20,17 @@
 			Hello <?=$user->first_name;?><br>
 
 			<form action="/pariksa/p_init_game" method='POST'>
-				<input type="radio" name="vyanjana" value="1">Level One <br>
-				<input type="radio" name="vyanjana" value="2">Level Two <br>
-				<input type="radio" name="vyanjana" value="3">Level Three <br>
-				<input type="radio" name="vyanjana" value="4">Level Four <br>
-				<input type="radio" name="vyanjana" value="5">Level Five <br>
-				<input type="radio" name="vyanjana" value="6">Level Six <br>
-				<input type="radio" name="vyanjana" value="7">Level Seven <br>
-				<input type="radio" name="vyanjana" value="8">Level Eight <br>
+				<input type="radio" name="tattva" value="1">Numbers 1-4<br>
+				<input type="radio" name="tattva" value="2">Numbers 5-9<br>
+				<input type="radio" name="tattva" value="3">Simple Vowels<br>
+				<input type="radio" name="tattva" value="4">Complex Vowels<br>
+				<input type="radio" name="tattva" value="5">Velar Consonants<br>
+				<input type="radio" name="tattva" value="6">Palatal Consonants<br>
+				<input type="radio" name="tattva" value="7">Retroflex Consonants<br>
+				<input type="radio" name="tattva" value="8">Dental Consonants<br>
+				<input type="radio" name="tattva" value="9">Labial Consonants<br>
+				<input type="radio" name="tattva" value="10">Semi-Vowels<br>
+				<input type="radio" name="tattva" value="11">Spirants<br>
 
 				<input type="submit" value='Start Game'>
 			</form>

@@ -76,7 +76,9 @@ if(!Array.indexOf){
     // A function to handle the element click
     var handleClick = function(){
       // starts the timer
-      if(numTotalClicks==0) gameTimer = setInterval(incTime,1000);
+      if(numTotalClicks==0) {
+        gameTimer = setInterval(incTime,1000);
+      }
       // counts the clicks
       numTotalClicks ++;
       // keeps the class for the clicked item
@@ -109,17 +111,23 @@ if(!Array.indexOf){
             clearInterval(gameTimer);
             // if game summary is set, adds the info to it and shows it.
             if(opts.gameSummary){
+              var gameScore = 1000 - numTotalClicks - numSeconds;
+              $('#score-holder').val(gameScore);
+              console.log(gameScore);
               $('div#quizy-game-summary').
                   children('div#gs-column2').
                   html(numSeconds+'<br>'+opts.textSummaryTime);
               $('div#quizy-game-summary').
                   children('div#gs-column3').
                   html(numTotalClicks+'<br>'+opts.textSummaryClicks);
-              $('div#quizy-game-summary').delay(2000).fadeIn(1000);
+              $('div#quizy-game-summary').
+                  children('div#gs-column4').
+                  html(gameScore+'<br>'+opts.textSummaryScore);
+              $('div#quizy-game-summary').delay(500).fadeIn(1000);
             }
             // if is set makes an AJAX call and sends the the necessary params
             if(opts.onFinishCall!=''){
-              opts.onFinishCall({ clicks: numTotalClicks, time: numSeconds } );
+              opts.onFinishCall({ clicks: numTotalClicks, time: numSeconds} );
             }
           }
         // if they dont have the same class = WE DON'T HAVE a match
@@ -323,7 +331,8 @@ if(!Array.indexOf){
       $(this).append('<div id="quizy-game-summary"><div id="gs-column1">'+
                       opts.textSummaryTitle+
                       '</div><div id="gs-column2"></div>'+
-                      '<div id="gs-column3"></div></div>');
+                      '<div id="gs-column3"></div>'+
+                      '<div id="gs-column4"></div></div>');
       // positions the summary div in the middle of the div wrapper
       var xMid = $(this).width()/2 - 
                   $('div#quizy-game-summary').width()/2;
@@ -374,7 +383,7 @@ if(!Array.indexOf){
                          
   ****************************************************************************/
   
-  $.fn.quizyMemoryGame.defaults = {itemWidth: 156, itemHeight: 156, itemsMargin:10, colCount:4, animType:'scroll', animSpeed:250, openDelay:2500, flipAnim:'rl', resultIcons:true, gameSummary:true, textSummaryTitle:'Your game summary', textSummaryClicks:'clicks', textSummaryTime:'seconds', onFinishCall:''};
+  $.fn.quizyMemoryGame.defaults = {itemWidth: 156, itemHeight: 156, itemsMargin:10, colCount:4, animType:'scroll', animSpeed:250, openDelay:2500, flipAnim:'rl', resultIcons:true, gameSummary:true, textSummaryTitle:'Your game summary', textSummaryClicks:'clicks', textSummaryTime:'seconds', textSummaryScore:'score', onFinishCall:''};
   
   
 })(jQuery);

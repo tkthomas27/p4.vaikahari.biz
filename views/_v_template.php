@@ -29,7 +29,7 @@
 			<li><a href='/'>Home</a></li>       
 			<?php if($user): ?>
 				<li><a href='/users/profile'>Profile</a></li>
-				<li><a href='/socres/index'>Scores</a></li>
+				<li><a href='/scores/index'>Scores</a></li>
 			<?php else: ?>
 				<li><a href='/users/signup'>Sign Up</a></li>
 				<li><a href='/users/login'>Log In</a></li>

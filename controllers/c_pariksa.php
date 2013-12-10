@@ -39,7 +39,6 @@ class pariksa_controller extends base_controller {
 
 	public function p_cont_game($user_id = NULL){
 
-
 		//accept the information from the field
 		$new_tattva = $_POST['tattva'];
 		$new_date_play =Time::now();
@@ -54,7 +53,7 @@ class pariksa_controller extends base_controller {
 
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->update('users',$scoredata,'Where user_id ='.$this->user->user_id);
-		DB::instance(DB_NAME)->query($q_score_update);
+		DB::instance(DB_NAME)->query($q_score_update,'Where user_id ='.$this->user->user_id);
 
 		//route the user back to the profile page
 		Router::redirect('/pariksa/game');
@@ -62,23 +61,6 @@ class pariksa_controller extends base_controller {
 	}
 
 	public function p_quit_game(){
-
-		//accept the information from the field
-		$new_tattva = $_POST['tattva'];
-		$new_date_play =Time::now();
-		$new_score = $_POST['score'];
-
-		//set incoming data as an array
-		$scoredata = Array('tattva'=>$new_tattva,'date_play'=>$new_date_play);
-
-		$q_score_update = 
-		'UPDATE users
-		SET score = score + '.$new_score;
-
-		//use sql to update the DB with the information stored in the array above
-		DB::instance(DB_NAME)->update('users',$scoredata,'Where user_id ='.$this->user->user_id);
-		DB::instance(DB_NAME)->query($q_score_update);
-		
 
 		$q_submit = 
 		'INSERT INTO scores ( 
@@ -106,6 +88,7 @@ class pariksa_controller extends base_controller {
 		DB::instance(DB_NAME)->update('users',$deldata,'Where user_id ='.$this->user->user_id);
 
 		Router::redirect("/");
+
 	}
 
 

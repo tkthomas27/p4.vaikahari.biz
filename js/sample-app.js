@@ -9,11 +9,11 @@ $(document).ready(function () {
 
 
 		$(function() {
-			$("#dialog").dialog({
+			$("#dialog-confirm").dialog({
 				autoOpen: false
 			});
-			$("#button").on("click", function() {
-				$("#dialog").dialog("open");
+			$("#quit-button").click(function() {
+				$("#dialog-confirm").dialog("open");
 			});
 		});
 

@@ -62,8 +62,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level One: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -189,8 +189,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Two: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -327,8 +327,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Three: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -453,8 +453,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Four: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -579,8 +579,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Five: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -705,8 +705,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Six: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -831,8 +831,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Seven: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -957,8 +957,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Eight: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -1083,8 +1083,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Nine: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -1203,8 +1203,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level Ten: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
@@ -1323,8 +1323,8 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog" title="Level One: Quit?">
-					<p>Quitting will submit your current progress to the High Score Table and delete your current progress. Are you sure?</p>
+				<div id="dialog-confirm" title="Level One: Quit?">
+					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>

@@ -8,13 +8,30 @@ $(document).ready(function () {
 	});
 
 
-		$(function() {
-			$("#dialog-confirm").dialog({
-				autoOpen: false
-			});
-			$("#quit-button").click(function() {
-				$("#dialog-confirm").dialog("open");
-			});
+	$(function() {
+
+		$( "#quit-dialog" ).dialog({
+			autoOpen: false,
+			width: 600,
+			show: {
+				effect: "blind",
+				duration: 1000
+			},
+			hide: {
+				effect: "explode",
+				duration: 1000
+			}
 		});
+
+		$( "#quit-button" ).click(function() {
+			$( "#quit-dialog" ).dialog( "open" );
+			alert('dont');
+		});
+	});
+
+
+	$('#example').dataTable( {
+        "aaSorting": [[ 4, "desc" ]]
+    } );
 
  });

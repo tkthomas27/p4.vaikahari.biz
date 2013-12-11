@@ -62,7 +62,7 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level One: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
@@ -73,7 +73,7 @@
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
 
@@ -166,12 +166,6 @@
 					<li class="match4" id='quiz-card'>
 						Nine
 					</li>
-<!-- 					<li class="match5" id='quiz-card'>
-						<img src="/images/devnag/five.png" alt="five" class='mem-card-img'>
-					</li>
-					<li class="match5" id='quiz-card'>
-						Five
-					</li> -->
 				</ul>
 			</div>
 
@@ -189,7 +183,7 @@
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="dialog-confirm" title="Level Two: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->

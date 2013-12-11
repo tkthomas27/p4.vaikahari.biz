@@ -10,6 +10,8 @@
 	<!-- Controller Specific JS/CSS -->
 	<link rel="stylesheet" href="/css/style.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="/css/quizymemorygame.css" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css" />
+	<link rel="stylesheet" type="text/css" href="/css/demo_table.css" />
 
 
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
@@ -18,6 +20,8 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <!-- jQuery UI -->
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script type="text/javascript" language="javascript" src="/js/jquery.dataTables.js"></script>
 
 					
 </head>

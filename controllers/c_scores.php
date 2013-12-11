@@ -6,14 +6,28 @@ class scores_controller extends base_controller {
 	}
 
 	public function index($user_id = NULL){
-		// set up the views
-		$this->template->content = View::instance('v_scores_index');
-		$this->template->title = "Scores";
+    # Set up the View
+    $this->template->content = View::instance('v_scores_index');
+    $this->template->title   = "scores";
 
-		// render the view
-		echo $this->template;
+    # Build the query
+    $q = "SELECT 
+            scores .* , 
+            users.first_name, 
+            users.last_name
+        FROM scores
+        INNER JOIN users 
+            ON scores.user_id = users.user_id";
+
+    # Run the query
+    $scores = DB::instance(DB_NAME)->select_rows($q);
+
+    # Pass data to the View
+    $this->template->content->scores = $scores;
+
+    # Render the View
+    echo $this->template;
 	}
-
 
 
 } # end of the class

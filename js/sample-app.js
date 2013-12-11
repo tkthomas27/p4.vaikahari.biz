@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
 
-
-	$('.trigger').click(function() {
-		$('.content').hide();
-		$('.' + $(this).data('rel')).show();
+	$(function() {
+		$('.trigger').click(function() {
+			$('.content').hide();
+			$('.' + $(this).data('rel')).show();
+		});
 	});
-
 
 	$(function() {
 
@@ -25,13 +25,19 @@ $(document).ready(function () {
 
 		$( "#quit-button" ).click(function() {
 			$( "#quit-dialog" ).dialog( "open" );
-			alert('dont');
 		});
 	});
 
+	$(function(){
 
-	$('#example').dataTable( {
-        "aaSorting": [[ 4, "desc" ]]
-    } );
+	$('.score-holder').change(function(){
+			var score = parseInt($('.score-holder').val(),10);
+
+			if(score > 0) {
+				$('.score-stop').removeClass('score-stop').addClass('continue-button');
+			}
+		});
+
+	});
 
  });

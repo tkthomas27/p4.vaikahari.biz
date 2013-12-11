@@ -54,10 +54,10 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='2'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Numbers 5-9  &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Numbers 5-9  &rarr;' class='score-stop'>
 					</div>
 				</form>
 

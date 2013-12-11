@@ -113,7 +113,7 @@ if(!Array.indexOf){
             if(opts.gameSummary){
               var gameScore = 1000 - numTotalClicks - numSeconds;
               $('#score-holder').val(gameScore);
-              console.log(gameScore);
+              $('.score-stop').removeClass('score-stop').addClass('continue-button');
               $('div#quizy-game-summary').
                   children('div#gs-column2').
                   html(numSeconds+'<br>'+opts.textSummaryTime);

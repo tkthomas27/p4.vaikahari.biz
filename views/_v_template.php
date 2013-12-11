@@ -15,14 +15,6 @@
 
 
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
-
-	<!-- jQuery standard -->
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<!-- jQuery UI -->
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
-<script type="text/javascript" language="javascript" src="/js/jquery.dataTables.js"></script>
-
 					
 </head>
 
@@ -63,6 +55,7 @@
 	<?php endif; ?>
 	
 	</div>
+<script type="text/javascript" language="javascript" src="/js/jquery.dataTables.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
 <script src="/js/jquery.flip.min.js" /></script>
@@ -70,6 +63,9 @@
 <script src="/js/sample-app.js"></script>
 <script>
 $('#my-memorygame').quizyMemoryGame({itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:5, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:true});
+</script>
+<script>
+	$('#example').dataTable();
 </script>
 
 </body>

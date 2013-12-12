@@ -67,7 +67,7 @@
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
@@ -77,10 +77,12 @@
 				</div>
 			</div>
 
+			<br><br>
+
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
 				<div class='top-progress-bar'>
-					<ul class='progress-bar'>
+					<ul>
 						<li>
 							<img src="/images/devnag/one.png" alt="one" id='progress-current'>
 						</li>
@@ -102,7 +104,7 @@
 					</ul>
 				</div>
 				<div class="bottom-progress-bar">
-					<ul class='progress-bar'>
+					<ul>
 						<li>
 							<img src="/images/devnag/xta.png" alt="xta" id='progress-future'>
 						</li>

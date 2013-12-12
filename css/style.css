@@ -287,7 +287,7 @@ input[type=radio] + img{
 	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 input[type=radio]:checked + img{
-  border:2px solid blue;
+  border:5px solid #057fd0;
 }
 
 .avatara-select-field{
@@ -339,8 +339,34 @@ input[type=radio]:checked + img{
 }
 
 #quit-dialog{
-	display:none;
+    display:none;
+	-moz-box-shadow:inset 0px 1px 9px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 9px 0px #fce2c1;
+	box-shadow:inset 0px 1px 9px 0px #fce2c1;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25));
+	background:-moz-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:-webkit-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:-o-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:-ms-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25',GradientType=0);
+	background-color:#ffc477;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:3px solid #ed7551;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+	text-align: center;
 }
+#quit-dialog
 
 .score-holder{
 	display:none;
@@ -350,14 +376,20 @@ input[type=radio]:checked + img{
 	margin-top: -20px;
 }
 
+
 .progress-bar-div{
 	width:900px;
 	text-align: center;
 	margin-top: -10px;
 }
 
+.progress-bar-div li{
+	list-style: none;
+	display:inline-block;
+}
+
+
 .bottom-progress-bar{
-	padding-left: 10px;
 	margin-top: -50px;
 }
 
@@ -365,6 +397,8 @@ input[type=radio]:checked + img{
 	text-align: center;
 	width:400px;
 	float:right;
+	margin-right: 50px;
+	height: 50px;
 }
 
 .continue-button{
@@ -409,6 +443,7 @@ input[type=radio]:checked + img{
 #quit-button-div{
 	text-align: center;
 	width:400px;
+	padding-top: 10px;
 
 }
 
@@ -432,7 +467,7 @@ input[type=radio]:checked + img{
 	cursor:pointer;
 	color:#ffffff;
 	font-family:arial;
-	font-size:21px;
+	font-size:22px;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 28px #854629;
@@ -525,6 +560,7 @@ input[type=radio]:checked + img{
 	border: 5px solid black;
 	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
+
 
 
 

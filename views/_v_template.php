@@ -19,7 +19,7 @@
 </head>
 
 <body>	
-
+<div class="wrap">
 	<div id='nav'>
 		<div id="navigation">
 			<p lang='hi' class='header'>देवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरी</p>
@@ -41,6 +41,7 @@
 			<a href='/' class='sideButton'>Home</a> <br> <br>
 			<a href='/users/profile' class='sideButton'>Profile</a> <br> <br>
 			<a href='/scores/index' class='sideButton'>Scores</a> <br> <br>
+			<a href='#' class='sideButton'>Help</a> <br> <br>
 			<a href='#' id='quit-button'>Logout</a> <br> <br>
 			<img src="<?=$user->avatara?>" class='side-avatar'> <br>
 		</p>
@@ -49,6 +50,7 @@
 	<?php endif; ?>
 	
 	</div>
+</div>
 <script type="text/javascript" language="javascript" src="/js/jquery.dataTables.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>

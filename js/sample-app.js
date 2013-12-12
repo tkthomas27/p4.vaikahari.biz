@@ -9,7 +9,6 @@ $(document).ready(function () {
 	});
 
 	$(function() {
-
 		$( "#quit-dialog" ).dialog({
 			autoOpen: false,
 			width: 600,
@@ -29,7 +28,6 @@ $(document).ready(function () {
 	});
 
 	$(function(){
-
 	$('.score-holder').change(function(){
 			var score = parseInt($('.score-holder').val(),10);
 
@@ -39,5 +37,15 @@ $(document).ready(function () {
 		});
 
 	});
+
+	$(function(){
+		$("#fake-image").load(function(){
+			$('.sideButton').removeClass('sideButton').addClass('score-stop');
+			console.log('hello');
+		});
+
+
+	});
+
 
  });

@@ -4,7 +4,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level One: Numbers 1-5
@@ -177,28 +177,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='3'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to simple vowels  &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Simple Vowels  &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level Two: Quit?">
+				<div id="quit-dialog" title="Level Two: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -315,28 +317,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='4'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Complex Vowels  &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Complex Vowels &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Three: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -441,28 +445,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='5'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Velar Consonants  &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Velar Consonants &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Four: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -567,28 +573,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='6'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Palatal Consonants &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Palatal Consonants &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Five: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -693,28 +701,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='7'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Retroflex Consonants &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Retroflex Consonants  &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Six: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -819,28 +829,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='8'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Dental Consonants  &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Dental Consonants  &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Seven: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -945,28 +957,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='9'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Labial Consonants  &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Labial Consonants  &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Eight: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -1071,28 +1085,31 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='10'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Semi-Vowels &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Semi-Vowels &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Nine: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
+
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -1191,28 +1208,30 @@
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='11'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Spirants  &rarr;' id='continue-button'>
+						<input type='submit' value='Continue to Spirants &rarr;' class='score-stop'>
 					</div>
 				</form>
 
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
+				<div id="quit-dialog" title="Level Ten: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
 					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
+					<button id="quit-button">Quit</button>
 				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>
@@ -1309,30 +1328,22 @@
 				<!-- Form for posting data to advance to next level and the score -->
 				<form action="/pariksa/p_cont_game/" method='POST'>
 					<!-- Next level data -->
-					<input type="hidden" name='tattva' value='2'>
+					<input type="hidden" name='tattva' value='11'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
-					<input type="hidden" name='score' id='score-holder' value=''>
+					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Continue to Numbers 5-9  &rarr;' id='continue-button'>
+						<input type='submit' value='Save Final Score!' class='score-stop'>
 					</div>
 				</form>
 
-				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
-				<div id="dialog-confirm" title="Level One: Quit?">
-					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
-					
 					<!-- The actual quiz button -->
 					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Quit'>
+						<input type='submit' value='Restart Game' id='quit-button'>
 					</form>
-				</div>
-
-				<!-- The fake quit button that calls up the confirmation box -->
-				<div id='quit-button-div'>
-					<input type="button" id="quit-button" value="Quit">
-				</div>
 			</div>
+
+			<br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>

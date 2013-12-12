@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/quizymemorygame.css" />
 	<link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css" />
 	<link rel="stylesheet" type="text/css" href="/css/demo_table.css" />
-
+	<link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.3.custom.css" />
 
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
 					
@@ -39,7 +39,7 @@
 			<img src="<?=$user->devata?>" class='side-devata'> <br>
 			<?=$user->first_name?> <?=$user->last_name?> <br><br>
 			<a href='/' class='sideButton'>Home</a> <br> <br>
-			<a href='/users/profile' class='sideButton'>Profile</a> <br> <br>
+			<a href='/users/profileedit' class='sideButton'>Profile</a> <br> <br>
 			<a href='/scores/index' class='sideButton'>Scores</a> <br> <br>
 			<a href='#' class='sideButton'>Help</a> <br> <br>
 			<a href='#' id='quit-button'>Logout</a> <br> <br>

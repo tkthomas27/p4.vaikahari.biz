@@ -115,24 +115,6 @@ class users_controller extends base_controller {
 
 	}
 
-	public function profile($user_name = NULL) {
-
-		//if user is not logged in, they cannot see the page
-		if(!$this->user){
-			die('Please, <a href="/users/login">Login</a>');
-		}
-
-		//set up the view
-		$this->template->content = View::instance('v_users_profile');
-		$this->template->title = "Profile";
-
-		//pass the data to the view
-		$this->template->content->user_name = $user_name;
-
-		//display the view
-		echo $this->template;
-
-	}
 
 	public function profileedit($user_name = NULL) {
 

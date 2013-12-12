@@ -79,7 +79,7 @@
 
 		<fieldset class='avatara-select-field'>
 			<legend>Select Your Ishta Devata</legend>
-		<div class="devata-select" sytle:'display:none'> 
+		<div class="devata-select"> 
 			<label class="devata-radio" for="vishnu-devata">
 				<input id="vishnu-devata" type="radio" name="devata-radio" class='vishnu trigger' data-rel='vishnu-desktop' value="/images/vishnu_devata.jpg"/>
 				<img src="/images/vishnu_devata.jpg" class="thumbnail">

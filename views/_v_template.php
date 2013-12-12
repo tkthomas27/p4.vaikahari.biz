@@ -21,19 +21,10 @@
 <body>	
 
 	<div id='nav'>
-		<ul id="navigation">
-			<li><a href='/'>Home</a></li>       
-			<?php if($user): ?>
-				<li><a href='/users/profile'>Profile</a></li>
-				<li><a href='/scores/index'>Scores</a></li>
-			<?php else: ?>
-				<li><a href='/users/signup'>Sign Up</a></li>
-				<li><a href='/users/login'>Log In</a></li>
-			<?php endif; ?>
-		</ul>
+		<div id="navigation">
+			<p lang='hi' class='header'>देवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरी</p>
+		</div>
 	</div>
-
-
 
 
 
@@ -46,8 +37,11 @@
 	<aside>
 		<p class="log">
 			<img src="<?=$user->devata?>" class='side-devata'> <br>
-			<?=$user->first_name?> <?=$user->last_name?> <br>
-			<?=$user->city?>, <?=$user->state?> <br><br>
+			<?=$user->first_name?> <?=$user->last_name?> <br><br>
+			<a href='/' class='sideButton'>Home</a> <br> <br>
+			<a href='/users/profile' class='sideButton'>Profile</a> <br> <br>
+			<a href='/scores/index' class='sideButton'>Scores</a> <br> <br>
+			<a href='#' id='quit-button'>Logout</a> <br> <br>
 			<img src="<?=$user->avatara?>" class='side-avatar'> <br>
 		</p>
 	</aside>

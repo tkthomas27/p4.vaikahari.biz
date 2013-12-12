@@ -112,7 +112,7 @@ if(!Array.indexOf){
             // if game summary is set, adds the info to it and shows it.
             if(opts.gameSummary){
               var gameScore = 1000 - numTotalClicks - numSeconds;
-              $('#score-holder').val(gameScore);
+              $('.score-holder').val(gameScore);
               $('.score-stop').removeClass('score-stop').addClass('continue-button');
               $('div#quizy-game-summary').
                   children('div#gs-column2').

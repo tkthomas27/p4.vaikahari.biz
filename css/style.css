@@ -15,7 +15,7 @@ width:1000px;
 margin:300px;
 position: absolute; 
 margin-top:80px;
-font-family:verdana,sans-serif;
+font-family:sans-serif;
 }
 
 .header{
@@ -27,7 +27,7 @@ font-family:verdana,sans-serif;
 background-color:white;
 width:100%;
 height:35px;
-box-shadow: 0px 1px 50px #5E5E5E;
+box-shadow: 0px 1px 20px #5E5E5E;
 position:fixed;
 top:0px;
 text-align: center;
@@ -91,7 +91,11 @@ aside
 	height: 100%;
 	top: 0;
 	left: 0;
-	border: 1px solid #111;
+	border: 3px solid #33bdef;
+	background-color: rgba(255, 242, 255, 1);
+	background: rgba(255, 242, 255, 1);
+	color: #057fd0;
+	font-size: 22px;
 }
 
 aside p
@@ -100,7 +104,7 @@ aside p
 	height: 100%;
 	width: 250px;
 	top: 150px;
-	margin: -100px 0;
+	margin: -120px 0;
 	padding-left: 40px;
 }
 
@@ -115,8 +119,9 @@ aside p
 	-webkit-border-radius: 99em;
 	-moz-border-radius: 99em;
 	border-radius: 99em;
-	border: 5px solid #eee;
+	border: 5px solid #33bdef;
 	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+	margin-top: -10px;
 }
 
 .side-devata{
@@ -130,8 +135,9 @@ aside p
 	-webkit-border-radius: 99em;
 	-moz-border-radius: 99em;
 	border-radius: 99em;
-	border: 5px solid #eee;
+	border: 5px solid #33bdef;
 	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+	margin-bottom: -8px;
 }
 
 .side-stop{
@@ -215,7 +221,7 @@ aside p
 
 
 .title{
-  font-family: verdana, sans-serif;
+  font-family:sans-serif;
   font-size: 50px;
   text-align: center;
 }
@@ -288,6 +294,16 @@ aside p
 
 
 /*Avatar and Devata Selecting*/
+.profileedit{
+	width:520px;
+	margin-left: -10px;
+}
+
+#profileedit-button{
+text-align: center
+}
+
+
 .avatara-radio > input[type=radio]{
   display:none;
 }
@@ -328,18 +344,28 @@ input[type=radio]:checked + img{
 	display: none;
 }
 
+h2{
+	margin-top: -30px;
+}
+
 .avatara-descp{
-	width:600px;
+	width:500px;
 	height:300px;
+	float:right;
+	margin-right: -50px;
+	margin-top: -580px
+
 }
 
 .avatar-descp-img{
-	float:right;
+	text-align: center;
+
 }
 
 .avatar-descp-text{
-	width:250px;
+	width:500px;
 	height:250px;
+	text-align: center;
 }
 
 .bigpic{
@@ -591,5 +617,23 @@ input[type=radio]:checked + img{
 	display:none;
 	height: 1px;
 	width:1px;
+}
+
+.score-div{
+text-align: center;
+}
+
+.score-title-span{
+font-family: 'Helvetica Neue',Helvetica, sans-serif;
+line-height: 1em;
+color: #d9e6ff;
+font-weight:bold;
+font-size: 107px;
+text-shadow:0px 0px 0 rgb(174,187,212),0px 1px 0 rgb(164,177,202),0px 2px 0 rgb(153,166,191),0px 3px 0 rgb(142,155,180),0px 4px 0 rgb(132,145,170),0px 5px 0 rgb(121,134,159), 0px 6px 0 rgb(110,123,148),0px 7px 6px rgba(0,0,0,0.35),0px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+
+}
+
+#example{
+	margin-top: 20px;
 }
 

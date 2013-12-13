@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+	$(function(){
+		$("#fake-image").load(function(){
+			$('.sideButton').removeClass('sideButton').addClass('score-stop');
+		});
+
+	});
+
+
+	$(function() {
+		$( "#accordion" ).accordion();
+	});
+
+
 
 	$(function() {
 		$('.trigger').click(function() {
@@ -7,6 +20,19 @@ $(document).ready(function () {
 			$('.' + $(this).data('rel')).show();
 		});
 	});
+
+
+	$(function(){
+		$('.score-holder').change(function(){
+			var score = parseInt($('.score-holder').val(),10);
+
+			if(score > 0) {
+				$('.score-stop').removeClass('score-stop').addClass('continue-button');
+			}
+		});
+	});
+
+
 
 	$(function() {
 		$( "#quit-dialog" ).dialog({
@@ -22,30 +48,18 @@ $(document).ready(function () {
 			}
 		});
 
+
 		$( "#quit-button" ).click(function() {
 			$( "#quit-dialog" ).dialog( "open" );
 		});
 	});
 
-	$(function(){
-	$('.score-holder').change(function(){
-			var score = parseInt($('.score-holder').val(),10);
-
-			if(score > 0) {
-				$('.score-stop').removeClass('score-stop').addClass('continue-button');
-			}
-		});
-
-	});
-
-	$(function(){
-		$("#fake-image").load(function(){
-			$('.sideButton').removeClass('sideButton').addClass('score-stop');
-			console.log('hello');
-		});
 
 
-	});
 
+
+			$(function() {
+			$('#example').dataTable();
+			} );
 
  });

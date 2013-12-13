@@ -133,7 +133,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Two: Numbers 6-9
@@ -255,7 +255,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Three: Simple Vowels 
@@ -395,7 +395,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Four: Complex Vowels
@@ -523,7 +523,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Five: Velar Consonants
@@ -651,7 +651,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Six: Palatal Consonants
@@ -779,7 +779,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Seven: Retroflex Consonants
@@ -907,7 +907,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Eight: Dental Consonants
@@ -1035,7 +1035,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Nine: Labial Consonants
@@ -1164,7 +1164,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Ten: Semi-Vowels
@@ -1286,7 +1286,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			
+			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Level: Spirants

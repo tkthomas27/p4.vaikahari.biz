@@ -1,4 +1,11 @@
 
+<?php if ($user): ?>
+
+<div class='score-div'>
+	<div class="score-title">
+		<span class='score-title-span'>Score Table</span>
+	</div>
+
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%">
 	<thead>
 		<tr>
@@ -16,7 +23,7 @@
 			<td><time datetime="<?=Time::display($score['date_play'],'Y-m-d G:i')?>">
 				<?=Time::display($score['date_play'])?>
 				</time></td>
-			<td class="center"><?=$score['score']?></td>
+			<td><?=$score['score']?></td>
 		</tr>
 		<?php endforeach; ?>
 	</tbody>
@@ -29,3 +36,19 @@
 		</tr>
 	</tfoot>
 </table>
+
+</div>
+
+	<!-- if user is not logged ask them to login or signup -->
+	<?php else: ?>
+
+		<div class="landing-user">
+
+			Please <a href='/users/signup'>Sign Up</a> <br>
+			or <br>
+			<a href='/users/login'>Log In</a>
+
+							
+		</div>
+
+	<?php endif; ?>

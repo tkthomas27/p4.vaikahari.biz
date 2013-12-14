@@ -15,6 +15,9 @@
 	<!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 
+<link href="/css/chardinjs.css" rel="stylesheet">
+
+
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
 					
 </head>
@@ -23,7 +26,7 @@
 <div class="wrap">
 	<div id='nav'>
 		<div id="navigation">
-			<p lang='hi' class='header'>देवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरी</p>
+			<p lang='hi' class='header' data-intro="The Gayatri Mantra to bless you experience" data-position="bottom">देवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरी</p>
 		</div>
 	</div>
 
@@ -39,10 +42,10 @@
 		<p class="log">
 			<img src="<?=$user->devata?>" class='side-devata'> <br>
 			<?=$user->first_name?> <?=$user->last_name?> <br><br>
-			<a href='/' class='sideButton'>Home</a> <br> <br>
-			<a href='/users/profileedit' class='sideButton'>Profile</a> <br> <br>
-			<a href='/scores/index' class='sideButton'>Scores</a> <br> <br>
-			<a href='/help/faq' class='sideButton'>Help</a> <br> <br>
+			<a href='/' class='sideButton' data-intro="Go back to the home page and level select" data-position="right">Home</a> <br> <br>
+			<a href='/users/profileedit' class='sideButton' data-intro="Edit you Profile" data-position="right">Profile</a> <br> <br>
+			<a href='/scores/index' class='sideButton' data-intro="Check where you rank in the high scores" data-position="right">Scores</a> <br> <br>
+			<a href='/help/faq' class='sideButton' data-intro="Have questions about Devanagari? Click here" data-position="right">Help</a> <br> <br>
 			<a href='#' id='quit-button'>Logout</a> <br> <br>
 			<img src="<?=$user->avatara?>" class='side-avatar'> <br>
 		</p>
@@ -66,7 +69,7 @@
 
 <!-- DataTables -->
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-
+<script src="/js/chardinjs.min.js"></script>
 <script src="/js/sample-app.js"></script>
 
 

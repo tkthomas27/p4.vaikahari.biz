@@ -72,7 +72,9 @@ if(!Array.indexOf){
     
     // FUNCTIONS **************************************************************
     // ************************************************************************
-        
+    
+
+
     // A function to handle the element click
     var handleClick = function(){
       // starts the timer
@@ -113,7 +115,6 @@ if(!Array.indexOf){
             if(opts.gameSummary){
               var gameScore = 1000 - numTotalClicks - numSeconds;
               $('.score-holder').val(gameScore);
-              $('.side-stop').removeClass('side-stop').addClass('sideButton');
               $('.score-stop').removeClass('score-stop').addClass('continue-button');
               $('div#quizy-game-summary').
                   children('div#gs-column2').

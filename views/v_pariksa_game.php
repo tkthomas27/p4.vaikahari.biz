@@ -270,7 +270,7 @@
 						<img src="/images/devnag/vowel_a.png" alt="Vowel A" class='mem-card-img'>
 					</li>
 					<li class="match2" id='quiz-card'>
-						<img src="/images/devnag/kha.vowerl_aa" alt="Vowel Long A" class='mem-card-img'>
+						<img src="/images/devnag/vowel_aa.png" alt="Vowel Long A" class='mem-card-img'>
 					</li>
 					<li class="match1" id='quiz-card'>
 						A
@@ -279,10 +279,10 @@
 						AA
 					</li>
 					<li class="match3" id='quiz-card'>
-						<img src="/images/devnag/vowel_i.png" alt="Vowerl I" class='mem-card-img'>
+						<img src="/images/devnag/vowel_i.png" alt="Vowel I" class='mem-card-img'>
 					</li>
 					<li class="match4" id='quiz-card'>
-						<img src="/images/devnag/vowerl_ii.png" alt="Vowel II" class='mem-card-img'>
+						<img src="/images/devnag/vowel_ii.png" alt="Vowel II" class='mem-card-img'>
 					</li>
 					<li class="match3" id='quiz-card'>
 						I
@@ -299,14 +299,14 @@
 					<li class="match5" id='quiz-card'>
 						U
 					</li>
-					<li class="match5" id='quiz-card'>
+					<li class="match6" id='quiz-card'>
 						UU
 					</li>
 					<li class="match5" id='quiz-card'>
 						<img src="/images/devnag/vowel_r.png" alt="Vowel R" class='mem-card-img'>
 					</li>
 					<li class="match5" id='quiz-card'>
-						R
+						ṛ
 					</li>
 				</ul>
 			</div>
@@ -559,10 +559,10 @@
 						Gha
 					</li>
 					<li class="match5" id='quiz-card'>
-						<img src="/images/devnag/na_velar.png" alt="Na (ng)" class='mem-card-img'>
+						<img src="/images/devnag/na_velar.png" alt="Na" class='mem-card-img'>
 					</li>
 					<li class="match5" id='quiz-card'>
-						Na (ng)
+						Na
 					</li>
 				</ul>
 			</div>
@@ -690,7 +690,7 @@
 						<img src="/images/devnag/na_palatal.png" alt="Na Palatal" class='mem-card-img'>
 					</li>
 					<li class="match5" id='quiz-card'>
-						Na (nya)
+						Na
 					</li>
 				</ul>
 			</div>

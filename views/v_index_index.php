@@ -20,7 +20,7 @@
 		<div class="main-select-div"> 
 			<form action="/pariksa/p_init_game" method='POST' class='select-form'>
 				<fieldset>
-					<legend><h2>Select your Level!</h2></legend>
+					<legend><h2 data-intro="Select a level to begin your test - you must continue to the end from where you choose begin" data-position="right">Select your Level!</h2></legend>
 					<label class="devata-radio" for="one-devata" id='one-level'>
 						<input id="one-devata" type="radio" name="tattva" class='trigger' data-rel='one-desktop' value="1"/>
 						<img src="/images/devnag/one.png" class="thumbnail">

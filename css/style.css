@@ -35,12 +35,57 @@ text-align: center;
 padding-left: 5px;
 z-index: 1000;
 line-height: 10px;
+white-space: nowrap;
+}
+
+
+.landing-nouser{
+	width:1000px;
+	height:300px;
+	text-align: center;
+}
+
+.intro{
+	font-size: 20px;
+}
+
+.login-div{
+	margin-top: 40px;
+	width:1000px;
+	height:400px;
+	text-align: center;
+}
+
+.login-input{
+	border-radius: 5px;
+	height:30px;
+	width:200px;
+	font-size: 18px;
+}
+
+.login-email{
+	font-size: 20px;
+	font-weight:bold;
 }
 
 .log{
 	height:100%;
 	width: 200px;
 	text-align: center;
+}
+
+.signup-form{
+	text-align: center;
+	width:1000px;
+}
+
+.main-title{
+font-family: 'Helvetica Neue',Helvetica, sans-serif;
+line-height: 1em;
+color: #37b6fa;
+font-weight:bold;
+font-size: 94px;
+text-shadow:0px 0px 0 rgb(42,169,237),1px 0px 0 rgb(29,156,224),2px 0px 0 rgb(17,144,212),3px 0px 0 rgb(4,131,199),4px 0px 0 rgb(-9,118,186),5px 0px 0 rgb(-22,105,173), 6px 0px 0 rgb(-35,92,160),7px 0px 6px rgba(0,0,0,0.4),7px 0px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
 }
 
 .instructions {
@@ -225,6 +270,7 @@ aside p
   font-family:sans-serif;
   font-size: 50px;
   text-align: center;
+  margin-top: -25px;
 }
 
 .select-descp{
@@ -663,5 +709,11 @@ text-shadow:0px 0px 0 rgb(174,187,212),0px 1px 0 rgb(164,177,202),0px 2px 0 rgb(
 
 #example{
 	margin-top: 20px;
+}
+
+.faq-div{
+	width:1000px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 

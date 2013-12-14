@@ -1,6 +1,9 @@
 	<!-- if user is logged in, display their profile -->
 	<?php if ($user): ?>
 
+<div class="faq-div">
+<span  class='score-title-span'>FAQ</span>
+</div>
 
 <div id="accordion">
 	<h3>What is Devanagari?</h3>

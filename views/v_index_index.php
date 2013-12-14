@@ -3,7 +3,7 @@
 	<!-- landing page title -->
 	<div class='title'>
 
-		Devanagari Pariksha
+		<span class='main-title'>Devanagari <br> Pariksha</span>
 
 		<br>
 
@@ -20,7 +20,7 @@
 		<div class="main-select-div"> 
 			<form action="/pariksa/p_init_game" method='POST' class='select-form'>
 				<fieldset>
-					<legend><h2 data-intro="Select a level to begin your test - you must continue to the end from where you choose begin" data-position="right">Select your Level!</h2></legend>
+					<legend><h2 data-intro="Select a level to begin your test - you must continue to the end from where you choose to begin" data-position="right">Select your Level!</h2></legend>
 					<label class="devata-radio" for="one-devata" id='one-level'>
 						<input id="one-devata" type="radio" name="tattva" class='trigger' data-rel='one-desktop' value="1"/>
 						<img src="/images/devnag/one.png" class="thumbnail">
@@ -158,13 +158,17 @@
 	<!-- if user is not logged ask them to login or signup -->
 	<?php else: ?>
 
-		<div class="landing-user">
-
-			Please <a href='/users/signup'>Sign Up</a> <br>
-			or <br>
-			<a href='/users/login'>Log In</a>
-
-							
+		<div class="landing-nouser">
+			<fieldset>
+				<legend><h1>भो:! Welcome! भो:!</h1></legend>
+			<p class='intro'>
+			For centuries, Devanagari (देवनागरी) has been the primary script for billions across South Asia. Devanagari Pariksha (Devanagari test) is your first step towards accessing South Asia's rich textual and cultural traditions. The test format is a memory card flipping game. For each round, you start with 1000 points and lose points for every second and click it takes to complete the page. Efficiency and quickness are the key to learning!
+			</p>
+			<br>
+			<a href='/users/signup' class='continue-button' data-intro="If this is your first time, please login so you can track your progress" data-position="left">Sign Up</a>   <a href='/users/login' class='continue-button' data-intro="If you have been here before, please log in" data-position="right">Log In</a>
+			
+			</fieldset>
+			
 		</div>
 
 	<?php endif; ?>

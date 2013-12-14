@@ -1326,21 +1326,17 @@
 
 			<div class="both-button-div">
 				<!-- Form for posting data to advance to next level and the score -->
-				<form action="/pariksa/p_cont_game/" method='POST'>
+				<form action="/pariksa/p_complete_game/" method='POST'>
 					<!-- Next level data -->
 					<input type="hidden" name='tattva' value='11'>
 					<!-- The score data: javascript feeds data from jquery.quizmemorygame.js to the blank value, php then reads it from here in the post action -->
 					<input type="hidden" name='score' class='score-holder' value=''>
 					<!-- the continue button -->
 					<div id="continue-button-div">
-						<input type='submit' value='Save Final Score!' class='score-stop'>
+						<input type='submit' value='Finish!' class='score-stop'>
 					</div>
 				</form>
 
-					<!-- The actual quiz button -->
-					<form action="/pariksa/p_quit_game" method='POST'>
-						<input type='submit' value='Restart Game' id='quit-button'>
-					</form>
 			</div>
 
 			<br><br>

@@ -1,17 +1,31 @@
 
 	<!-- login head -->
-	<div class='prohead'>
+	<!-- landing page title -->
+	<div class='title'>
 
-		Please, Log In
+		<span class='main-title'>Devanagari <br> Pariksha</span>
+
+		<br>
 
 	</div>
 
 	<!-- form for loggin in -->
-	<form method='POST' action='/users/p_login' class='login'>
+	<div class="login-div">
+		<form method='POST' action='/users/p_login' class='login'>
 
-		Email: <input type='text' name='email'><br>
-		Password: <input type='password' name='password'><br>
+			<span class='login-email'>Email</span><br>
+			<input type='text' name='email' class='login-input'><br> <br>
+			<span class='login-email'>Password</span><br>
+			<input type='password' name='password' class='login-input'><br>
 
-		<input type='Submit' value='Log In' class='loginsubmit'>
+			<br><br>
 
-	</form>
+			<input type='Submit' value='Log In' class='continue-button'>
+
+		</form>
+		
+		<br><br>
+
+		<a href='/users/signup' class='continue-button'>Sign Up</a>
+	</div>
+

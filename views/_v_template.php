@@ -10,8 +10,8 @@
 	<!-- Controller Specific JS/CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css" >
 	<link rel="stylesheet" type="text/css" href="/css/quizymemorygame.css" />
-	<link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.3.custom.css" />
 
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.min.css">
 	<!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 
@@ -26,7 +26,7 @@
 <div class="wrap">
 	<div id='nav'>
 		<div id="navigation">
-			<p lang='hi' class='header' data-intro="The Gayatri Mantra to bless you experience" data-position="bottom">देवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरीदेवनागरी</p>
+			<p lang='hi' class='header' data-intro="The Gayatri Mantra to bless you experience" data-position="bottom">ॐ भूर्भुव: स्व: तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो प्रचोदयात ॐ भूर्भुव: स्व: तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो प्रचोदयात ॐ भूर्भुव: स्व: तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो प्रचोदयात</p>
 		</div>
 	</div>
 
@@ -40,14 +40,14 @@
 	<?php if($user): ?>
 	<aside>
 		<p class="log">
-			<img src="<?=$user->devata?>" class='side-devata'> <br>
+			<img src="<?=$user->devata?>" class='side-devata' data-intro="Go to Profile to select your Ishta Devata" data-position="right"> <br>
 			<?=$user->first_name?> <?=$user->last_name?> <br><br>
-			<a href='/' class='sideButton' data-intro="Go back to the home page and level select" data-position="right">Home</a> <br> <br>
+			<a href='/' class='sideButton' data-intro="Return to this page for level select" data-position="right">Home</a> <br> <br>
 			<a href='/users/profileedit' class='sideButton' data-intro="Edit you Profile" data-position="right">Profile</a> <br> <br>
 			<a href='/scores/index' class='sideButton' data-intro="Check where you rank in the high scores" data-position="right">Scores</a> <br> <br>
 			<a href='/help/faq' class='sideButton' data-intro="Have questions about Devanagari? Click here" data-position="right">Help</a> <br> <br>
-			<a href='#' id='quit-button'>Logout</a> <br> <br>
-			<img src="<?=$user->avatara?>" class='side-avatar'> <br>
+			<a href='/users/logout' id='quit-button'>Logout</a> <br> <br>
+			<img src="<?=$user->avatara?>" class='side-avatar' data-intro="Go to Profile to select your Avatara" data-position="right"> <br>
 		</p>
 	</aside>
 

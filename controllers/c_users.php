@@ -153,7 +153,7 @@ class users_controller extends base_controller {
 		DB::instance(DB_NAME)->update('users',$prodata,'Where user_id ='.$this->user->user_id);
 
 		//route the user back to the profile page
-		Router::redirect('/users/profile');
+		Router::redirect('/');
 
 
 	}

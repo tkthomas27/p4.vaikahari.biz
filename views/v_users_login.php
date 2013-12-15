@@ -20,6 +20,13 @@
 
 			<br><br>
 
+		<?php if(isset($error)): ?>
+			<div class='error-log'>
+				Login failed. Please double check your email and password.
+			</div>
+			<br>
+		<?php endif; ?>
+
 			<input type='Submit' value='Log In' class='continue-button'>
 
 		</form>

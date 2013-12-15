@@ -30,6 +30,13 @@
 
 				<br><br>
 
+			<?php if(isset($error)): ?>
+				<div class='error-log'>
+					Sign up failed. That email is already in use!
+				</div>
+				<br>
+			<?php endif; ?>
+
 				<input class='continue-button' type='submit' value='Sign Up'>
 
 			</form>

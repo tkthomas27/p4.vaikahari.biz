@@ -20,13 +20,13 @@ class users_controller extends base_controller {
 	public function p_signup() {
 
 
-
 		//check if email already exists
 		$exists = DB::instance(DB_NAME)->select_field('SELECT email FROM users WHERE email = "'.$_POST['email'].'"');
 
 		//if email exists, die and show an error message
 		if($exists){
-			die("<h2>Please, that email is already in use</h2><br><a href='/users/signup'>Sign Up</a>");
+			# Note the addition of the parameter "error"
+			Router::redirect("/users/login/error"); 
 		}
 
 		else {
@@ -51,11 +51,15 @@ class users_controller extends base_controller {
 		
 	}
 
-	public function login() {
+	public function login($error = NULL) {
 
 		//set up the view
 		$this->template->content = View::instance('v_users_login');
 		$this->template->title   = "Login";
+
+		# Pass data to the view
+		$this->template->content->error = $error;
+
 
 		//Render Template
 		echo $this->template;
@@ -77,19 +81,17 @@ class users_controller extends base_controller {
 
 		$token = DB::instance(DB_NAME)->select_field($q);
 
-		//if token is generated, set a cookie
-		if($token) {
-			setcookie('token',$token,strtotime('+1 year'),'/');
-
-			//Route back to homepage
-			Router::redirect('/');
-
+		# Login failed
+		if(!$token) {
+			# Note the addition of the parameter "error"
+			Router::redirect("/users/login/error"); 
 		}
-
-		//if failure, then try again
+		# Login passed
 		else {
-			echo "<h2>login fail <a href='/users/login'>would you like to try again?</a></h2>";
+			setcookie("token", $token, strtotime('+2 weeks'), '/');
+			Router::redirect("/");
 		}
+
 
 	}
 
@@ -101,6 +103,7 @@ class users_controller extends base_controller {
 		//Render Template
 		echo $this->template;
 	}
+
 
 	public function logout() {
 
@@ -162,13 +165,14 @@ class users_controller extends base_controller {
 
 	}
 
-	public function pwdchange($user_name = NULL) {
+	public function pwdchange($user_name = NULL, $error = NULL, $error2 = NULL) {
 
 		//if user is not logged in, they cannot see the page
 		if(!$this->user){
-			die('Please, <a href="/users/login">Login</a>');
+			Router::redirect('/users/problem');
 		}
 
+		else {
 		//set up the view
 		$this->template->content = View::instance('v_users_pwdchange');
 		$this->template->title = "Profile Edit";
@@ -179,8 +183,13 @@ class users_controller extends base_controller {
 		//pass error data to the view
 		$this->template->content->error = $error;
 
+		//pass error data to the view
+		$this->template->content->error2 = $error2;
+
 		//display the view
 		echo $this->template;
+
+	}
 
 	}
 
@@ -189,7 +198,7 @@ class users_controller extends base_controller {
 		//check input for blank fields, if blanks exist, die and show error message
 		foreach($_POST as $field => $value) {
 			if(empty($value)) {
-				die("<h2>Please, No blank fields</h2><br><a href='/users/profile'>Profile</a>");
+				Router::redirect('/users/pwdchange/error');
 			}
 		}
 
@@ -231,7 +240,7 @@ class users_controller extends base_controller {
 			Router::redirect('/');
 		}
 		else {
-			die("<h2>Please, Use the right password</h2><br><a href='/users/profileedit'>Sign Up</a>");
+			Router::redirect('/users/pwdchange/error2');;
 		}
 
 	}

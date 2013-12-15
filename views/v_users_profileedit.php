@@ -2,6 +2,8 @@
 	<!-- if user is logged in, allow them to change profile and password -->
 	<?php if(isset($user)): ?>
 
+		<a href="/users/pwdchange">Password Change</a>
+
 		<!-- profile editor form -->
 		<form class='profileedit' method='POST' action='/users/p_profileedit'>
 

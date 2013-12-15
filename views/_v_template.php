@@ -40,14 +40,27 @@
 	<?php if($user): ?>
 	<aside>
 		<p class="log">
-			<img src="<?=$user->devata?>" class='side-devata' data-intro="Go to Profile to select your Ishta Devata" data-position="right"> <br>
+
+			<?php  if($user->devata == ''):  ?> 
+				<img src="/images/placeholder.gif" class='side-devata' data-intro="Go to Profile to select your Ishta Devata" data-position="right"> <br>
+			<?php elseif($user->devata !== ''): ?>
+				<img src="<?=$user->devata?>" class='side-devata' data-intro="Go to Profile to select your Ishta Devata" data-position="right"> <br>
+			<?php endif; ?>
+
+
 			<?=$user->first_name?> <?=$user->last_name?> <br><br>
 			<a href='/' class='sideButton' data-intro="Return to this page for level select" data-position="right">Home</a> <br> <br>
 			<a href='/users/profileedit' class='sideButton' data-intro="Edit you Profile" data-position="right">Profile</a> <br> <br>
 			<a href='/scores/index' class='sideButton' data-intro="Check where you rank in the high scores" data-position="right">Scores</a> <br> <br>
 			<a href='/help/faq' class='sideButton' data-intro="Have questions about Devanagari? Click here" data-position="right">Help</a> <br> <br>
 			<a href='/users/logout' id='quit-button'>Logout</a> <br> <br>
-			<img src="<?=$user->avatara?>" class='side-avatar' data-intro="Go to Profile to select your Avatara" data-position="right"> <br>
+
+			<?php  if($user->devata == ''):  ?> 
+				<img src="/images/placeholder.gif" class='side-avatar' data-intro="Go to Profile to select your Avatara" data-position="right"> <br>
+			<?php elseif($user->devata !== ''): ?>
+				<img src="<?=$user->avatara?>" class='side-avatar' data-intro="Go to Profile to select your Avatara" data-position="right"> <br>
+			<?php endif; ?>
+			
 		</p>
 	</aside>
 

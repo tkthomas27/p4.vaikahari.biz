@@ -15,6 +15,20 @@
 			Current Password <input type='password' name='password'><br>
 			New Password <input type="password" name='newpassword'><br>
 
+			<?php if(isset($error)): ?>
+				<div class='error-log'>
+					Password change failed. No blank Fields!
+				</div>
+				<br>
+			<?php endif; ?>
+
+			<?php if(isset($error2)): ?>
+				<div class='error-log'>
+					Password change failed. Current password incorrect!
+				</div>
+				<br>
+			<?php endif; ?>
+
 			<input type='submit' value='Submit Change' class='proeditsubmit'>
 
 		</form>

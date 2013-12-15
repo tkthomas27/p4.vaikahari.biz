@@ -836,10 +836,22 @@ list-style: none;
 }
 
 .error-log{
-	color:red;
+	color:#780000;
+	font-weight: bold;
 }
 
+.password-reset{
+	text-align: center;
+}
 
+.profileedit-pass{
+	text-align: center;
+	width:520px;
+}
+
+.password-link {
+
+}
 
 
 

@@ -858,7 +858,7 @@
 						xDha
 					</li>
 					<li class="match5" id='quiz-card'>
-						<img src="/images/devnag/na_retroflex.png" alt="Na (xna)" class='mem-card-img'>
+						<img src="/images/devnag/na_retro.png" alt="Na (xna)" class='mem-card-img'>
 					</li>
 					<li class="match5" id='quiz-card'>
 						xNa
@@ -1410,7 +1410,7 @@
 
 			</div>
 
-			<br><br>
+			<br><br><br>
 
 			<!-- the visual progress bar -->
 			<div class='progress-bar-div'>

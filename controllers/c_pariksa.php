@@ -27,6 +27,11 @@ class pariksa_controller extends base_controller {
 
 	public function game($user_id = NULL) {
 
+		//if user is not logged in, they cannot see the page
+		if(!$this->user){
+			die(Router::redirect('/users/problem'));
+		}
+
 		// set up the views
 		$this->template->content = View::instance('v_pariksa_game');
 		$this->template->title = "Game";

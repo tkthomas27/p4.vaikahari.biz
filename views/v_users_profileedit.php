@@ -1,8 +1,6 @@
 	
 	<!-- if user is logged in, allow them to change profile and password -->
-	<?php if(isset($user)): ?>
-
-		<a href="/users/pwdchange">Password Change</a>
+	<?php if($user): ?>
 
 		<!-- profile editor form -->
 		<form class='profileedit' method='POST' action='/users/p_profileedit'>
@@ -166,6 +164,12 @@
 			</div>
 
 		</form>
+
+		<br><br>
+
+		<div class="profileedit-pass">
+			<a href="/users/pwdchange" id='quit-button'>Password Change</a>
+		</div>
 
 		<br><br>
 

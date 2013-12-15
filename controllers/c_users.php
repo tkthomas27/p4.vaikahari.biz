@@ -6,6 +6,15 @@ class users_controller extends base_controller {
 	} 
 
 
+	public function problem(){
+		//set up the view
+		$this->template->content = View::instance('v_users_problem');
+		$this->template->title   = "Problem";
+
+		//Render Template
+		echo $this->template;
+	}
+
 	public function signup($error = NULL) {
 
 		// set up the views
@@ -19,6 +28,7 @@ class users_controller extends base_controller {
 
 	public function p_signup() {
 
+		$_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
 		//check if email already exists
 		$exists = DB::instance(DB_NAME)->select_field('SELECT email FROM users WHERE email = "'.$_POST['email'].'"');
@@ -68,6 +78,8 @@ class users_controller extends base_controller {
 
 	public function p_login() {
 
+		$_POST = DB::instance(DB_NAME)->sanitize($_POST);
+
 		//encode the password following the signup procedure
 		$_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
 
@@ -95,15 +107,6 @@ class users_controller extends base_controller {
 
 	}
 
-	public function problem(){
-		//set up the view
-		$this->template->content = View::instance('v_users_problem');
-		$this->template->title   = "Problem";
-
-		//Render Template
-		echo $this->template;
-	}
-
 
 	public function logout() {
 
@@ -127,18 +130,12 @@ class users_controller extends base_controller {
 
 		//if user is not logged in, they cannot see the page
 		if(!$this->user){
-			die('Please, <a href="/users/login">Login</a>');
+			die(Router::redirect('/users/problem'));
 		}
 
 		//set up the view
 		$this->template->content = View::instance('v_users_profileedit');
 		$this->template->title = "Profile Edit";
-
-		//pass the data to the view
-		$this->template->content->user_name = $user_name;
-
-		//pass error data to the view
-		$this->template->content->error = $error;
 
 		//display the view
 		echo $this->template;
@@ -165,40 +162,32 @@ class users_controller extends base_controller {
 
 	}
 
-	public function pwdchange($user_name = NULL, $error = NULL, $error2 = NULL) {
+	public function pwdchange($error = NULL) {
 
 		//if user is not logged in, they cannot see the page
 		if(!$this->user){
-			Router::redirect('/users/problem');
+			die(Router::redirect('/users/problem'));
 		}
 
-		else {
-		//set up the view
-		$this->template->content = View::instance('v_users_pwdchange');
-		$this->template->title = "Profile Edit";
+			//set up the view
+			$this->template->content = View::instance('v_users_pwdchange');
+			$this->template->title = "Profile Edit";
 
-		//pass the data to the view
-		$this->template->content->user_name = $user_name;
+			//pass error data to the view
+			$this->template->content->error = $error;
 
-		//pass error data to the view
-		$this->template->content->error = $error;
-
-		//pass error data to the view
-		$this->template->content->error2 = $error2;
-
-		//display the view
-		echo $this->template;
+			//display the view
+			echo $this->template;
 
 	}
 
-	}
 
 	public function p_password() {
 
 		//check input for blank fields, if blanks exist, die and show error message
 		foreach($_POST as $field => $value) {
 			if(empty($value)) {
-				Router::redirect('/users/pwdchange/error');
+				Router::redirect('/users/pwdchange/blank-field');
 			}
 		}
 
@@ -227,20 +216,12 @@ class users_controller extends base_controller {
 			//update the users table with the above array where the logged in user equals the user_id
 			DB::instance(DB_NAME)->update('users',$pwdset,'Where user_id ='.$this->user->user_id);
 
-			//logout process same as above
-			$new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
-
-			$data = Array('token'=>$new_token);
-
-			DB::instance(DB_NAME)->update('users',$data,'Where user_id ='.$this->user->user_id);
-
-			setcookie('token','',strtotime('-1 year'),'/');
-
 			//route the user back to the home page
-			Router::redirect('/');
+			Router::redirect('/users/pwdchange/success');
 		}
+
 		else {
-			Router::redirect('/users/pwdchange/error2');;
+			Router::redirect('/users/pwdchange/pwd-fail');;
 		}
 
 	}

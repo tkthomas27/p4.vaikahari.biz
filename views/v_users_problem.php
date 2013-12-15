@@ -11,7 +11,7 @@
 			<fieldset>
 				<legend><h1>Uh-oh Something went wrong...</h1></legend>
 			<p class='intro'>
-			Looks like there was a problem! Maybe you tried signing up with someone else's email... Try re-signing in, or, if you are already a member, try logging in again
+			Looks like there was a problem! Try re-signing in, or, if you are already a member, try logging in again
 			</p>
 			<br>
 			<a href='/users/signup' class='continue-button' data-intro="If this is your first time, please login so you can track your progress" data-position="left">Sign Up</a>   <a href='/users/login' class='continue-button' data-intro="If you have been here before, please log in" data-position="right">Log In</a>

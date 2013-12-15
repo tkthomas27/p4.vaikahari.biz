@@ -1,37 +1,51 @@
 	<!-- if user is logged in, allow them to change profile and password -->
 	<?php if(isset($user)): ?>
 
-		<!-- password change head -->
-		<div class='proedithead'>
-
-			Password Reset
-
-		</div>
-
+	<div class="password-reset">
 		<!-- form for changing password -->
-		<form class='profileedit' method='POST' action='/users/p_password'>
-			
-			Email: <input type='text' name='email'><br>
-			Current Password <input type='password' name='password'><br>
-			New Password <input type="password" name='newpassword'><br>
+		<form method='POST' action='/users/p_password'>
+			<fieldset>
 
-			<?php if(isset($error)): ?>
-				<div class='error-log'>
-					Password change failed. No blank Fields!
-				</div>
+				<legend><h2>Password Reset</h2></legend>
+
+				<span id='login-email'>Email</span><br>
+				<input type='text' name='email' id='login-input' required><br><br>
+				<span id='login-email'>Current Password</span><br>
+				<input type='password' name='password' id='login-input' required><br><br>
+				<span id='login-email'>New Password</span><br>
+				<input type="password" name='newpassword' id='login-input' required><br>
+
 				<br>
-			<?php endif; ?>
 
-			<?php if(isset($error2)): ?>
-				<div class='error-log'>
-					Password change failed. Current password incorrect!
-				</div>
+				<?php if(isset($error) && $error == 'blank-field'): ?>
+					<div class='error-log'>
+						Password change failed. No blank Fields!
+					</div>
+					<br>
+				<?php endif; ?>
+
+				<?php if(isset($error) && $error =='pwd-fail'): ?>
+					<div class='error-log'>
+						Password change failed. Password and Email don't match!
+					</div>
+					<br>
+				<?php endif; ?>
+
+				<?php if(isset($error) && $error =='success'): ?>
+					<div class='error-log'>
+						Password change was a success!
+					</div>
+					<br>
+				<?php endif; ?>
+
 				<br>
-			<?php endif; ?>
 
-			<input type='submit' value='Submit Change' class='proeditsubmit'>
+				<input type='submit' value='Submit Change' class='continue-button'>
 
+			</fieldset>
 		</form>
+	</div>
+
 
 	<!-- if user is not logged, ask them to sign up or log in -->
 	<?php else: ?>

@@ -7,7 +7,10 @@
 			<img src="/images/placeholder.gif" alt="" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
-				Level One: Numbers 1-5
+				Level One: Numbers 1-5 
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -61,6 +64,7 @@
 					</div>
 				</form>
 
+
 				<!-- hidden dialog box, will displayed when the quit button is clicked to ask for confirmation -->
 				<div id="quit-dialog" title="Level One: Quit?">
 					<p>Quitting will submit your past progress to High Score Table and delete your current progress. You must continue to the next page to save your progress from this level. Are you sure you want to quit?</p>
@@ -75,6 +79,11 @@
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
 				</div>
+
+				<div id="cheat-dialog" title="Level One: Cheat Sheet">
+					<img src="/images/cheat_number1.png" alt="">
+				</div>
+
 			</div>
 
 			<br><br>
@@ -137,6 +146,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Two: Numbers 6-9
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -197,6 +209,10 @@
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
+				</div>
+
+				<div id="cheat-dialog" title="Level Two: Cheat Sheet">
+					<img src="/images/cheat_numbers2.png" alt="">
 				</div>
 			</div>
 
@@ -259,6 +275,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Three: Simple Vowels 
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -338,6 +357,9 @@
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
 				</div>
+				<div id="cheat-dialog" title="Level Three: Cheat Sheet">
+					<img src="/images/cheat_vowels1.png" alt="">
+				</div>
 			</div>
 
 			<br><br>
@@ -399,6 +421,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Four: Complex Vowels
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -466,6 +491,9 @@
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
 				</div>
+				<div id="cheat-dialog" title="Level Four: Cheat Sheet">
+					<img src="/images/cheat_vowels2.png" alt="">
+				</div>
 			</div>
 
 			<br><br>
@@ -527,6 +555,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Five: Velar Consonants
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -594,6 +625,9 @@
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
 				</div>
+				<div id="cheat-dialog" title="Level Five: Cheat Sheet">
+					<img src="/images/cheat_velar.png" alt="">
+				</div>
 			</div>
 
 			<br><br>
@@ -655,6 +689,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Six: Palatal Consonants
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -722,6 +759,9 @@
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
 				</div>
+				<div id="cheat-dialog" title="Level Six: Cheat Sheet">
+					<img src="/images/cheat_palatal.png" alt="">
+				</div>
 			</div>
 
 			<br><br>
@@ -783,6 +823,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Seven: Retroflex Consonants
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -850,6 +893,9 @@
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
 				</div>
+				<div id="cheat-dialog" title="Level Seven: Cheat Sheet">
+					<img src="/images/cheat_retroflex.png" alt="">
+				</div>
 			</div>
 
 			<br><br>
@@ -911,6 +957,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Eight: Dental Consonants
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -972,6 +1021,9 @@
 					<form action="/pariksa/p_quit_game" method='POST'>
 						<input type='submit' value='Quit' id='quit-button'>
 					</form>
+					<div id="cheat-dialog" title="Level Eight: Cheat Sheet">
+					<img src="/images/cheat_dental.png" alt="">
+					</div>
 				</div>
 
 				<!-- The fake quit button that calls up the confirmation box -->
@@ -1039,6 +1091,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Nine: Labial Consonants
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -1106,6 +1161,9 @@
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
 				</div>
+				<div id="cheat-dialog" title="Level Nine: Cheat Sheet">
+					<img src="/images/cheat_labial.png" alt="">
+				</div>
 			</div>
 
 			<br><br>
@@ -1168,6 +1226,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Ten: Semi-Vowels
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -1228,6 +1289,9 @@
 				<!-- The fake quit button that calls up the confirmation box -->
 				<div id='quit-button-div'>
 					<button id="quit-button">Quit</button>
+				</div>
+				<div id="cheat-dialog" title="Level Ten: Cheat Sheet">
+					<img src="/images/cheat_semi-vowels.png" alt="">
 				</div>
 			</div>
 
@@ -1290,6 +1354,9 @@
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Level: Spirants
+				<div id="cheat-div">	
+				<button id="cheat-button">Cheat Sheet</button>
+				</div>
 			</div>
 
 			<br>
@@ -1336,6 +1403,10 @@
 						<input type='submit' value='Finish!' class='score-stop'>
 					</div>
 				</form>
+
+				<div id="cheat-dialog" title="Level Eleven: Cheat Sheet">
+					<img src="/images/cheat_spirants.png" alt="">
+				</div>
 
 			</div>
 

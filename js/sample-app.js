@@ -52,6 +52,27 @@ $(document).ready(function () {
 		});
 	});
 
+
+		$(function() {
+		$( "#cheat-dialog" ).dialog({
+			autoOpen: false,
+			width: 600,
+			show: {
+				effect: "blind",
+				duration: 1000
+			},
+			hide: {
+				effect: "explode",
+				duration: 1000
+			}
+		});
+
+
+		$( "#cheat-button" ).click(function() {
+			$( "#cheat-dialog" ).dialog( "open" );
+		});
+	});
+
 			$(function() {
 			$('#example').dataTable();
 			} );

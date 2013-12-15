@@ -2,21 +2,15 @@
 	<!-- if user is logged in, allow them to change profile and password -->
 	<?php if(isset($user)): ?>
 
-		<!-- profile editor head -->
-		<div class='proedithead'>
-
-		<h2>Editing Profile for <?=$user->first_name?> <?=$user->last_name?></h2>
-
-		</div>
-
 		<!-- profile editor form -->
 		<form class='profileedit' method='POST' action='/users/p_profileedit'>
 
 		<fieldset class='location-select-field'>
 			<legend>Enter your Location</legend>
 		<div class="location-edit">
-			City: <input type='text' name='city'><br>
-			State: <select name='state'>
+			City (Optional): <input name='city' maxlength='20'>
+			<br>
+			State (Optional): <select name='state'>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
@@ -74,8 +68,10 @@
 		</fieldset>
 
 		<br><br>
+
 		<fieldset class='avatara-select-field'>
-			<legend>Select Your avatara</legend>
+			<legend>Select your Avatara </legend>
+			<p id='select-intro'>Below are the Dasavatara (दशावतार)- the 10 Avataras of Vishnu. Choose one as your personal incarnation during your test</p>
 		<div class="avatara-select"> 
 			<label class="avatara-radio" for="matsya-avatara">
 				<input id="matsya-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='matsya-desktop' value="/images/matsya_avatara.jpg"/>
@@ -131,7 +127,8 @@
 		<br><br>
 
 		<fieldset class='avatara-select-field'>
-			<legend>Select Your Ishta Devata</legend>
+			<legend>Select your Ishta Devata</legend>
+			<p id='select-intro'>Choose your favored deity (इष्टदेवता) from the five form system of Shankaracarya for guidance during your test</p>
 		<div class="devata-select"> 
 			<label class="devata-radio" for="vishnu-devata">
 				<input id="vishnu-devata" type="radio" name="devata-radio" class='vishnu trigger' data-rel='vishnu-desktop' value="/images/vishnu_devata.jpg"/>
@@ -175,195 +172,160 @@
 				<div class="avatar-descp-img">
 					<img src="/images/matsya_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Matsya (मत्स्य): The first avatara of Vishnu, Matsya (literally meaning "fish") was a giant fish that rescued the hero Manu from
+					the great flood that killed all living things. He is depicted either as a giant fish or as a half-man, half-fish with the half-man 
+					portion representing Vishnu.  The basic story involving the forewarning of an impending flood, the salvation of a few in a boat, and 
+					the rebirth of the world after the flood is a motif found throug in cultures vastly disparate areas of the world. The possibility of 
+					potential connections between these stories has tantalized scholars for centuries.
 				</div>
 			</div>
 			<div class="kurma-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/kurma_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Kurma (कुर्म): The second avatara of Vishnu, he was the turtle form taken on by Vishnu to aid in the churning of the ocean of milk (the 
+					samudra mathan).  Having been cursed to lose their immortality by the irascible sage Durvasas, the gods sought the nectar of immortality
+					(amrita) that lie at the bottom of the ocean.  To do so, they used Mount Mandara as a churning stick - supported by the turtle Kurma - 
+					to churn the ocean and deliever up to the amrita.
 				</div>
 			</div>
 			<div class="varaha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/varaha_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Varaha (वराह): The third avatara of Vishnu is responsible for rescuing the world when it was cast into the primordial ocean by the demon
+					Hiranyaksha. Havin insulted the devotees of Vishunu, Jaya and Vijaya, who are also the guardians of Vishnu, are reincarnatd as the
+					 demons Hiranyaksha and Hiranyakshipu. Hiranyaksha casts the earth into the primordial ocean as vengenance. Vishnu then takes the 
+					 form of a giant boar, slays Hiranyaksha, and raises the earth back to the heavens on his tusks.
 				</div>
 			</div>
 			<div class="narasimha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/narasimha_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Narasimha (नरसिंह): The fourth avatara of Vishnu, Narasimha (literally, "man-lion") is responsible for killing the demon Hiranyakshipu.
+					Having heard of the death of his brother at the hands of Vishnu, Hiranyakshipu practices tapas to obtain the boon of not being killed 
+					by any man nor animal and declares war on all things Vishnu including his own son Prahlada.  When he goes to kill his son Prahlada, 
+					Vishnu appears as Narasimha (neither man nor animal) and slays Hiranyakshipu.
 				</div>
 			</div>
 			<div class="vamana-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/vamana_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Vamana (वामन): The fifth avatara of Vishnu, Vamana reclaimed the world for the gods after it had been taken over by the benevolent but 
+					demonic king Mahabali, the grandson of Prahlada.  Visiting Mahabali, Vishnu took the form of a dwarf Vamana and requested ownership of all
+					the land we could walk over in three strides. Mahabali consented and Vamana grew to huge proportions and strode across the universe in
+					two steps.
 				</div>
 			</div>
 			<div class="parashurama-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/parashurama_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Parashurama (परशुराम): The sixth avatara of Vishnu, Parashurama ('Axe-Rama') was an immortal warrior who killed all the kshatriyas (kings) 21 times over.
+					During the time of Parashurama, kshatriyas were incredibly powerful and oppressive. The most powerful one, Kartavirya, stole Parashurama's sacred cow.
+					Parashurama killed Kartavirya and in retaliation the other kshatriyas killed Parashurama's father. Enraged, Parashurama proceed to hunt down and kill
+					all the kshatriyas he could find.
 				</div>
 			</div>	
 			<div class="rama-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/rama_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Rama (राम): The seventh avatara of Vishnu, Rama is most well known as the hero of the Ramayana. In his relentless adherence to Dharma, 
+					Rama is considered to be the paragon of human conduct and kingly virtue. Upholding the ancient promises of his father, Rama relinquishes
+					his claim on the throne and goes into exile. While in the forest, his wife is captured by the demon king Ravana. With his brother Lakshmana 
+					and the monkey warrior Hanuman, Rama slays Ravana and returns home as king along with Sita.
 				</div>
 			</div>
 			<div class="krishna-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/krishna_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Krishna (कृष्ण): The eighth avatara of Vishnu, Krishna is the full incarnation of Vishnu. In his youth, Krishna's mischief as a child and
+					dalliances with the wives of the cow herders as a youth exemplify divine play and the longing devotion of his followers. His most famous act is revealing
+					his universal form (visvarupa) to Arjuna in the Mahabharata while exhorting Arjuna to follow his personal dharma as a warrior. This 
+					episode is the world famous Bhagavad Gita.
 				</div>
 			</div>	
 			<div class="buddha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/buddha_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Buddha (बुद्ध): The ninth avatara of Vishnu is, with some controversy, the Buddha. There is some confusion particularly regarding the
+					name of the Buddha which can simply be a title for someone possessed of wisdom. However, there are some claims that Siddhartha Gautama,
+					the Buddha of Buddhism, is an avatara of Vishnu. Why and when this became the case have been debated for centuries and continue to be so today.
 				</div>
 			</div>
 			<div class="kalki-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/kalki_avatara.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Kalki (कल्कि): The tenth and final avatara of Vishnu, Kalki has not yeat appeared and when he arrives he will usher in the end of the current
+					world.  He is traditionally depicted astride a white horse and brandishing a flaming sword in his left hand.
 				</div>
 			</div>
 			<div class="vishnu-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/vishnu_devata.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Vishnu (विष्णु): Vishnu enjoys a rich and varied legacy in South and Southeast Asia. He is identified as the supreme lord of everything and all
+					pervasive in everything in the Vaishnava tradition.  He is often depicted reclining on the celestial serpent who floats on the cosmic ocean of milk with the dreams of Vishnu
+					emanating the universe.  In his four arms he is seen carrying a conch, a throwing disc, a mace, and a lotus.
 				</div>
 			</div>
 			<div class="shiva-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/shiva_devata.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Shiva (शिव): Shiva is an extremely popular deity who is considered the supreme god in Shaiva traditions. Shiva has exprienced a long evolution
+					over the centuries from the Vedic Rudra to the Smarta ascetic. While Vishnu is often considered the preserver, Shiva is often cast as the destroyer
+					whose cosmic dance will destroy the current universe.  He is often depicted as an ascetic with ragged hair meditating on a leopard's skin. In his
+					hair is a crescent moon and from his hair glows the Ganga river.
 				</div>
 			</div>
 			<div class="ganesha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/ganesha_devata.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Ganesha (गणेश): Ganesha is a tremendously popular deity in South Asia who is seen as the remover of obstacles. In various stories he is the son
+					of Shiva who he accidentally decapitated and then replaced his head with that of an elephant.  Ganesha is associated with mental agility, thus the 
+					reason he is the transcriber of the epic Mahabharata.  Ganesha's birthday is celebrated with the massively popular Ganesh Cathurthi.
 				</div>
 			</div>
 			<div class="devi-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/devi_devata.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Devi (देवी): Devi is the general term for the divine energy that animats all of the Hindu goddesses. One of the more popular aspects of Devi
+					is the goddess Durga who was created by Shiva, Vishnu, and Brahma to defeat the demon Mahishasura. Her other forms of Kali, a blood thirsty
+					yet motherly deity, and Parvati, the wife of Shiva, are also immensely popular. The celebration of Durga known as Durga Puja is an extensive festival
+					celebrated throughout India.
 				</div>
 			</div>
 			<div class="surya-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/surya_devata.jpg" class="bigpic">
 				</div>
-				<div class="avatar-descp-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="avatar-descp-text" id='select-side-descp'>
+					Surya (शूर्य): Surya, meaning the Sun, has a close relationship to ancient solar forms of solar worship throughout Asia. Surya is the father
+					of several prominent figure in Indian literature: Sugriva the monkey king from the Ramayana, Karna the great warrior from the Mahabharata, and 
+					Manu the father of mankind falling the great deluge. 
 				</div>
 			</div>
 		</div>

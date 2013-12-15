@@ -6,16 +6,22 @@ $(document).ready(function () {
 		});
 	});
 
+		$("#signup-form").validate({
+		});
+
 
 	$(function() {
-		$( "#accordion" ).accordion();
+		$( "#accordion" ).accordion({
+			heightStyle: "content",
+			clearStyle: true
 	});
+  });
 
 
 
   if ($('#fake-image').is(':hidden')) {
-        $('.sideButton').removeClass('sideButton').addClass('sideStop');
-    }
+		$('.sideButton').removeClass('sideButton').addClass('sideStop');
+	}
 
 
 	$(function() {

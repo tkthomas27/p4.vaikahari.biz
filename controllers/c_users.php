@@ -19,12 +19,7 @@ class users_controller extends base_controller {
 
 	public function p_signup() {
 
-		//check input for blank fields, if blanks exist, die and show error message
-		foreach($_POST as $field => $value) {
-			if(empty($value)) {
-				die("<h2>Please, No blank fields</h2><br><a href='/users/signup'>Sign Up</a>");
-			}
-		}
+
 
 		//check if email already exists
 		$exists = DB::instance(DB_NAME)->select_field('SELECT email FROM users WHERE email = "'.$_POST['email'].'"');
@@ -96,6 +91,15 @@ class users_controller extends base_controller {
 			echo "<h2>login fail <a href='/users/login'>would you like to try again?</a></h2>";
 		}
 
+	}
+
+	public function problem(){
+		//set up the view
+		$this->template->content = View::instance('v_users_problem');
+		$this->template->title   = "Problem";
+
+		//Render Template
+		echo $this->template;
 	}
 
 	public function logout() {

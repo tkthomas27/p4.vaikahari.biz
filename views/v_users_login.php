@@ -13,10 +13,10 @@
 	<div class="login-div">
 		<form method='POST' action='/users/p_login' class='login'>
 
-			<span class='login-email'>Email</span><br>
-			<input type='text' name='email' class='login-input'><br> <br>
-			<span class='login-email'>Password</span><br>
-			<input type='password' name='password' class='login-input'><br>
+			<span id='login-email'>Email</span><br>
+			<input type='text' name='email' id='login-input'><br> <br>
+			<span id='login-email'>Password</span><br>
+			<input type='password' name='password' id='login-input'><br>
 
 			<br><br>
 

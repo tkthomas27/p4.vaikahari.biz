@@ -42,13 +42,18 @@
 	<!-- if user is not logged ask them to login or signup -->
 	<?php else: ?>
 
-		<div class="landing-user">
+		<div class="landing-nouser">
+			<fieldset>
+				<legend><h1>भो:! Welcome! भो:!</h1></legend>
+				
+					<p class='intro'>
+						For centuries, Devanagari (देवनागरी) has been the primary script for billions across South Asia. Devanagari Pariksha (Devanagari test) is your first step towards accessing South Asia's rich textual and cultural traditions. The test format is a memory card flipping game. For each round, you start with 1000 points and lose points for every second and click it takes to complete the page. Efficiency and quickness are the key to learning!
+					</p>
 
-			Please <a href='/users/signup'>Sign Up</a> <br>
-			or <br>
-			<a href='/users/login'>Log In</a>
+					<br>
 
-							
-		</div>
+					<a href='/users/signup' class='continue-button' data-intro="If this is your first time, please login so you can track your progress" data-position="left">Sign Up</a>   <a href='/users/login' class='continue-button' data-intro="If you have been here before, please log in" data-position="right">Log In</a>
+			
+			</fieldset>
 
 	<?php endif; ?>

@@ -1,4 +1,5 @@
 	
+	<!-- title -->
 	<div class='title'>
 
 		<span class='main-title'>Devanagari <br> Pariksha</span>
@@ -8,10 +9,11 @@
 	</div>
 
 	<!-- signup form -->
-
 	<div id="signup-form-div">
 		<fieldset>
-			<legend><h2>Welcome, please sign up</h2></legend>
+			<legend>Welcome, please sign up</legend>
+
+			<!-- form for signingup; uses validate plugin -->
 			<form class="cmxform" id='signup-form' method='POST' action='/users/p_signup'>
 				
 				<br>
@@ -30,13 +32,18 @@
 
 				<br><br>
 
+			<!-- php if statement to display error -->
 			<?php if(isset($error)): ?>
+
 				<div class='error-log'>
 					Sign up failed. That email is already in use!
 				</div>
+
 				<br>
+
 			<?php endif; ?>
 
+				<!-- button for submitting the sign up form -->
 				<input class='continue-button' type='submit' value='Sign Up'>
 
 			</form>

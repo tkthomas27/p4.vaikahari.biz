@@ -1,15 +1,20 @@
 
 
+	<!-- php to make sure user is logged in and to see what level they are on -->
 	<?php if ($user && $user->tattva == 1): ?>
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+
+			<!-- the fake image to deactivate the buttons using jQuery -->
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
+
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level One: Numbers 1-5 
+				<!-- cheat sheet button to display the cheat sheet -->
 				<div id="cheat-div">	
-				<button id="cheat-button">Cheat Sheet</button>
+					<button id="cheat-button">Cheat Sheet</button>
 				</div>
 			</div>
 
@@ -51,6 +56,7 @@
 				</ul>
 			</div>
 
+			<!-- div for both buttons -->
 			<div class="both-button-div">
 				<!-- Form for posting data to advance to next level and the score -->
 				<form action="/pariksa/p_cont_game/" method='POST'>
@@ -80,8 +86,9 @@
 					<button id="quit-button">Quit</button>
 				</div>
 
+				<!-- the dialog that is displayed when the cheat button is clicked -->
 				<div id="cheat-dialog" title="Level One: Cheat Sheet">
-					<img src="/images/cheat_number1.png" alt="">
+					<img src="/images/cheat_number1.png" alt="cheat-sheet">
 				</div>
 
 			</div>
@@ -142,7 +149,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Two: Numbers 6-9
@@ -212,7 +219,7 @@
 				</div>
 
 				<div id="cheat-dialog" title="Level Two: Cheat Sheet">
-					<img src="/images/cheat_numbers2.png" alt="">
+					<img src="/images/cheat_numbers2.png" alt="numbers2 cheat sheet">
 				</div>
 			</div>
 
@@ -271,7 +278,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Three: Simple Vowels 
@@ -358,7 +365,7 @@
 					<button id="quit-button">Quit</button>
 				</div>
 				<div id="cheat-dialog" title="Level Three: Cheat Sheet">
-					<img src="/images/cheat_vowels1.png" alt="">
+					<img src="/images/cheat_vowels1.png" alt="simple vowels cheat sheet">
 				</div>
 			</div>
 
@@ -417,7 +424,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Four: Complex Vowels
@@ -492,7 +499,7 @@
 					<button id="quit-button">Quit</button>
 				</div>
 				<div id="cheat-dialog" title="Level Four: Cheat Sheet">
-					<img src="/images/cheat_vowels2.png" alt="">
+					<img src="/images/cheat_vowels2.png" alt="complex vowels cheat sheet">
 				</div>
 			</div>
 
@@ -551,7 +558,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Five: Velar Consonants
@@ -626,7 +633,7 @@
 					<button id="quit-button">Quit</button>
 				</div>
 				<div id="cheat-dialog" title="Level Five: Cheat Sheet">
-					<img src="/images/cheat_velar.png" alt="">
+					<img src="/images/cheat_velar.png" alt="velar cheat sheet">
 				</div>
 			</div>
 
@@ -685,7 +692,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Six: Palatal Consonants
@@ -760,7 +767,7 @@
 					<button id="quit-button">Quit</button>
 				</div>
 				<div id="cheat-dialog" title="Level Six: Cheat Sheet">
-					<img src="/images/cheat_palatal.png" alt="">
+					<img src="/images/cheat_palatal.png" alt="palatal cheat sheet">
 				</div>
 			</div>
 
@@ -819,7 +826,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Seven: Retroflex Consonants
@@ -894,7 +901,7 @@
 					<button id="quit-button">Quit</button>
 				</div>
 				<div id="cheat-dialog" title="Level Seven: Cheat Sheet">
-					<img src="/images/cheat_retroflex.png" alt="">
+					<img src="/images/cheat_retroflex.png" alt="retroflex cheat sheet">
 				</div>
 			</div>
 
@@ -953,7 +960,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Eight: Dental Consonants
@@ -1022,7 +1029,7 @@
 						<input type='submit' value='Quit' id='quit-button'>
 					</form>
 					<div id="cheat-dialog" title="Level Eight: Cheat Sheet">
-					<img src="/images/cheat_dental.png" alt="">
+					<img src="/images/cheat_dental.png" alt="dental cheat sheet">
 					</div>
 				</div>
 
@@ -1087,7 +1094,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Nine: Labial Consonants
@@ -1162,7 +1169,7 @@
 					<button id="quit-button">Quit</button>
 				</div>
 				<div id="cheat-dialog" title="Level Nine: Cheat Sheet">
-					<img src="/images/cheat_labial.png" alt="">
+					<img src="/images/cheat_labial.png" alt="labial cheat sheet">
 				</div>
 			</div>
 
@@ -1222,7 +1229,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Ten: Semi-Vowels
@@ -1291,7 +1298,7 @@
 					<button id="quit-button">Quit</button>
 				</div>
 				<div id="cheat-dialog" title="Level Ten: Cheat Sheet">
-					<img src="/images/cheat_semi-vowels.png" alt="">
+					<img src="/images/cheat_semi-vowels.png" alt="semi vowel cheat sheet">
 				</div>
 			</div>
 
@@ -1350,7 +1357,7 @@
 
 		<!-- Wrapper for the entire game -->
 		<div class="game-wrap">
-			<img src="/images/placeholder.gif" alt="" id='fake-image'>
+			<img src="/images/placeholder.gif" alt="fake-image" id='fake-image'>
 			<!-- Header showing the current level -->
 			<div class='level-head'>
 				Level Level: Spirants
@@ -1405,7 +1412,7 @@
 				</form>
 
 				<div id="cheat-dialog" title="Level Eleven: Cheat Sheet">
-					<img src="/images/cheat_spirants.png" alt="">
+					<img src="/images/cheat_spirants.png" alt="spirants cheat sheet">
 				</div>
 
 			</div>
@@ -1466,7 +1473,7 @@
 
 		<div class="landing-nouser">
 			<fieldset>
-				<legend><h1>भो:! Welcome! भो:!</h1></legend>
+				<legend>भो:! Welcome! भो:!</legend>
 				
 					<p class='intro'>
 						For centuries, Devanagari (देवनागरी) has been the primary script for billions across South Asia. Devanagari Pariksha (Devanagari test) is your first step towards accessing South Asia's rich textual and cultural traditions. The test format is a memory card flipping game. For each round, you start with 1000 points and lose points for every second and click it takes to complete the page. Efficiency and quickness are the key to learning!

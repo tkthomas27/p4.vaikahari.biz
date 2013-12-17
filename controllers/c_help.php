@@ -7,7 +7,7 @@ class help_controller extends base_controller {
 
 	public function faq($user_id = NULL) {
 
-		// set up the views
+		// set up the view
 		$this->template->content = View::instance('v_help_faq');
 		$this->template->title = "FAQ";
 

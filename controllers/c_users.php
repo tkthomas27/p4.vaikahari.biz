@@ -28,6 +28,7 @@ class users_controller extends base_controller {
 
 	public function p_signup() {
 
+		//sanitize the incoming data
 		$_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
 		//check if email already exists
@@ -35,7 +36,7 @@ class users_controller extends base_controller {
 
 		//if email exists, die and show an error message
 		if($exists){
-			# Note the addition of the parameter "error"
+			//route to the login page with an error
 			Router::redirect("/users/login/error"); 
 		}
 
@@ -44,6 +45,7 @@ class users_controller extends base_controller {
 		//add a created time to users
 		$_POST['created'] = Time::now();
 
+		//establish a default placeholder image
 		$_POST['devata'] = '/images/placeholder.gif';
 		$_POST['avatara'] = '/images/placeholder.gif';
 
@@ -67,9 +69,8 @@ class users_controller extends base_controller {
 		$this->template->content = View::instance('v_users_login');
 		$this->template->title   = "Login";
 
-		# Pass data to the view
+		// Pass data to the view
 		$this->template->content->error = $error;
-
 
 		//Render Template
 		echo $this->template;
@@ -78,6 +79,7 @@ class users_controller extends base_controller {
 
 	public function p_login() {
 
+		//sanitize the incoming data
 		$_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
 		//encode the password following the signup procedure
@@ -93,12 +95,12 @@ class users_controller extends base_controller {
 
 		$token = DB::instance(DB_NAME)->select_field($q);
 
-		# Login failed
+		// If login failed
 		if(!$token) {
-			# Note the addition of the parameter "error"
+			// redirect to teh error page
 			Router::redirect("/users/login/error"); 
 		}
-		# Login passed
+		// if login passes, set a new token and redirect to the main page
 		else {
 			setcookie("token", $token, strtotime('+2 weeks'), '/');
 			Router::redirect("/");
@@ -110,8 +112,10 @@ class users_controller extends base_controller {
 
 	public function logout() {
 
+		//establish a new token
 		$new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
 
+		//set information as array then variable
 		$data = Array('token'=>$new_token);
 
 		//change to token based on loged out status
@@ -130,6 +134,7 @@ class users_controller extends base_controller {
 
 		//if user is not logged in, they cannot see the page
 		if(!$this->user){
+			//redirect the nonuser to the problem page
 			die(Router::redirect('/users/problem'));
 		}
 
@@ -166,6 +171,7 @@ class users_controller extends base_controller {
 
 		//if user is not logged in, they cannot see the page
 		if(!$this->user){
+			//redirect nonuser to problem page
 			die(Router::redirect('/users/problem'));
 		}
 
@@ -187,7 +193,7 @@ class users_controller extends base_controller {
 		//check input for blank fields, if blanks exist, die and show error message
 		foreach($_POST as $field => $value) {
 			if(empty($value)) {
-				Router::redirect('/users/pwdchange/blank-field');
+				die(Router::redirect('/users/pwdchange/blank-field'));
 			}
 		}
 

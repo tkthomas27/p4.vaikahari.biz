@@ -1,50 +1,56 @@
 	<!-- if user is logged in, allow them to change profile and password -->
 	<?php if(isset($user)): ?>
 
-	<div class="password-reset">
-		<!-- form for changing password -->
-		<form method='POST' action='/users/p_password'>
-			<fieldset>
+		<div class="password-reset">
 
-				<legend><h2>Password Reset</h2></legend>
+			<!-- form for changing password -->
+			<form method='POST' action='/users/p_password'>
 
-				<span id='login-email'>Email</span><br>
-				<input type='text' name='email' id='login-input' required><br><br>
-				<span id='login-email'>Current Password</span><br>
-				<input type='password' name='password' id='login-input' required><br><br>
-				<span id='login-email'>New Password</span><br>
-				<input type="password" name='newpassword' id='login-input' required><br>
+				<!-- fielset for reseting the password -->
+				<fieldset>
+					<legend>Password Reset</legend>
 
-				<br>
+					<span id='login-email'>Email</span><br>
+					<input type='text' name='email' id='login-input' required><br><br>
+					<span id='login-email'>Current Password</span><br>
+					<input type='password' name='password' id='login-input' required><br><br>
+					<span id='login-email'>New Password</span><br>
+					<input type="password" name='newpassword' id='login-input' required><br>
 
-				<?php if(isset($error) && $error == 'blank-field'): ?>
-					<div class='error-log'>
-						Password change failed. No blank Fields!
-					</div>
 					<br>
-				<?php endif; ?>
 
-				<?php if(isset($error) && $error =='pwd-fail'): ?>
-					<div class='error-log'>
-						Password change failed. Password and Email don't match!
-					</div>
+					<!-- php if statements for displaying the errors -->
+					<?php if(isset($error) && $error == 'blank-field'): ?>
+						<div class='error-log'>
+							Password change failed. No blank Fields!
+						</div>
+						<br>
+					<?php endif; ?>
+
+					<!-- php if statements for displaying the errors -->
+					<?php if(isset($error) && $error =='pwd-fail'): ?>
+						<div class='error-log'>
+							Password change failed. Password and Email don't match!
+						</div>
+						<br>
+					<?php endif; ?>
+
+					<!-- php if statements for displaying the errors -->
+					<?php if(isset($error) && $error =='success'): ?>
+						<div class='error-log'>
+							Password change was a success!
+						</div>
+						<br>
+					<?php endif; ?>
+
 					<br>
-				<?php endif; ?>
 
-				<?php if(isset($error) && $error =='success'): ?>
-					<div class='error-log'>
-						Password change was a success!
-					</div>
-					<br>
-				<?php endif; ?>
+					<!-- submit button for password reset form -->
+					<input type='submit' value='Submit Change' class='continue-button'>
 
-				<br>
-
-				<input type='submit' value='Submit Change' class='continue-button'>
-
-			</fieldset>
-		</form>
-	</div>
+				</fieldset>
+			</form>
+		</div>
 
 
 	<!-- if user is not logged, ask them to sign up or log in -->
@@ -63,5 +69,6 @@
 					<a href='/users/signup' class='continue-button' data-intro="If this is your first time, please login so you can track your progress" data-position="left">Sign Up</a>   <a href='/users/login' class='continue-button' data-intro="If you have been here before, please log in" data-position="right">Log In</a>
 			
 			</fieldset>
+		</div>
 
 	<?php endif; ?>

@@ -1,29 +1,32 @@
 $(document).ready(function () {
 
+	//use Chardin plugin for overlay of instructions
 	$(function(){
 		$('.instructions').click(function(){
 			$('body').chardinJs('toggle');
 		});
 	});
 
-		$("#signup-form").validate({
-		});
+		//use parsley plugin to validate the signup form
+		$("#signup-form").validate({});
 
 
+	//use jQuery UI accordion plugin on the faq page
 	$(function() {
 		$( "#accordion" ).accordion({
 			heightStyle: "content",
 			clearStyle: true
+		});
 	});
-  });
 
 
+		//I have put a hidden 'fake' image on the pariksa/game pages. if this image is present and hidden, the sidebuttons are
+		//disabled to prevent the user from leaving the game without quitting.
+		if ($('#fake-image').is(':hidden')) {
+			$('.sideButton').removeClass('sideButton').addClass('sideStop');
+		}
 
-  if ($('#fake-image').is(':hidden')) {
-		$('.sideButton').removeClass('sideButton').addClass('sideStop');
-	}
-
-
+	//used to show hidden data, i.e. the avatara/devata info that is hidden on the profile-edit page
 	$(function() {
 		$('.trigger').click(function() {
 			$('.content').hide();
@@ -32,6 +35,7 @@ $(document).ready(function () {
 	});
 
 
+	//jQuery UI modal box plugin for the quit dialog during the game
 	$(function() {
 		$( "#quit-dialog" ).dialog({
 			autoOpen: false,
@@ -52,8 +56,8 @@ $(document).ready(function () {
 		});
 	});
 
-
-		$(function() {
+	//jQuery UI modal box plugin for the cheat sheet dialog during the game
+	$(function() {
 		$( "#cheat-dialog" ).dialog({
 			autoOpen: false,
 			width: 600,
@@ -73,8 +77,9 @@ $(document).ready(function () {
 		});
 	});
 
-			$(function() {
-			$('#example').dataTable();
-			} );
+	//use the Datatable plugin
+	$(function() {
+		$('#example').dataTable();
+	} );
 
  });

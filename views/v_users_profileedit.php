@@ -4,12 +4,16 @@
 
 		<!-- profile editor form -->
 		<form class='profileedit' method='POST' action='/users/p_profileedit'>
-
+		
+		<!-- location select field -->
 		<fieldset class='location-select-field'>
 			<legend>Enter your Location</legend>
+
 		<div class="location-edit">
 			City (Optional): <input name='city' maxlength='20'>
+
 			<br>
+			<!-- drop down list for selecting state -->
 			State (Optional): <select name='state'>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
@@ -69,96 +73,105 @@
 
 		<br><br>
 
+		<!-- avatara select field -->
 		<fieldset class='avatara-select-field'>
 			<legend>Select your Avatara </legend>
 			<p id='select-intro'>Below are the Dasavatara (दशावतार)- the 10 Avataras of Vishnu. Choose one as your personal incarnation during your test</p>
-		<div class="avatara-select"> 
-			<label class="avatara-radio" for="matsya-avatara">
-				<input id="matsya-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='matsya-desktop' value="/images/matsya_avatara.jpg"/>
-				<img src="/images/matsya_avatara.jpg" class="thumbnail">
-			</label>
+			
+			<div class="avatara-select"> 
+				
+				<!-- radio buttons for selecting the avataras -->
+				<label class="avatara-radio" for="matsya-avatara">
+					<input id="matsya-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='matsya-desktop' value="/images/matsya_avatara.jpg"/>
+					<img src="/images/matsya_avatara.jpg" class="thumbnail">
+				</label>
 
-			<label class="avatara-radio" for="kurma-avatara">
-				<input id="kurma-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='kurma-desktop' value="/images/kurma_avatara.jpg"/>
-				<img src="/images/kurma_avatara.jpg" class="thumbnail">
-			</label>
+				<label class="avatara-radio" for="kurma-avatara">
+					<input id="kurma-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='kurma-desktop' value="/images/kurma_avatara.jpg"/>
+					<img src="/images/kurma_avatara.jpg" class="thumbnail">
+				</label>
 
-			<label class="avatara-radio" for="varaha-avatara">
-				<input id="varaha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='varaha-desktop' value="/images/varaha_avatara.jpg"/>
-				<img src="/images/varaha_avatara.jpg" class="thumbnail">
-			</label>
+				<label class="avatara-radio" for="varaha-avatara">
+					<input id="varaha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='varaha-desktop' value="/images/varaha_avatara.jpg"/>
+					<img src="/images/varaha_avatara.jpg" class="thumbnail">
+				</label>
 
-			<label class="avatara-radio" for="narasimha-avatara">
-				<input id="narasimha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='narasimha-desktop' value="/images/narasimha_avatara.jpg"/>
-				<img src="/images/narasimha_avatara.jpg" class="thumbnail">
-			</label>
+				<label class="avatara-radio" for="narasimha-avatara">
+					<input id="narasimha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='narasimha-desktop' value="/images/narasimha_avatara.jpg"/>
+					<img src="/images/narasimha_avatara.jpg" class="thumbnail">
+				</label>
 
-			<label class="avatara-radio" for="vamana-avatara">
-				<input id="vamana-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='vamana-desktop' value="/images/vamana_avatara.jpg"/>
-				<img src="/images/vamana_avatara.jpg" class="thumbnail">
-			</label>
-			<br>
-			<label class="avatara-radio" for="parashurama-avatara">
-				<input id="parashurama-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='parashurama-desktop' value="/images/parashurama_avatara.jpg"/>
-				<img src="/images/parashurama_avatara.jpg" class="thumbnail">
-			</label>
+				<label class="avatara-radio" for="vamana-avatara">
+					<input id="vamana-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='vamana-desktop' value="/images/vamana_avatara.jpg"/>
+					<img src="/images/vamana_avatara.jpg" class="thumbnail">
+				</label>
+				<br>
+				<label class="avatara-radio" for="parashurama-avatara">
+					<input id="parashurama-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='parashurama-desktop' value="/images/parashurama_avatara.jpg"/>
+					<img src="/images/parashurama_avatara.jpg" class="thumbnail">
+				</label>
 
-			<label class="avatara-radio" for="rama-avatara">
-				<input id="rama-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='rama-desktop' value="/images/rama_avatara.jpg"/>
-				<img src="/images/rama_avatara.jpg" class="thumbnail">
-			</label>
+				<label class="avatara-radio" for="rama-avatara">
+					<input id="rama-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='rama-desktop' value="/images/rama_avatara.jpg"/>
+					<img src="/images/rama_avatara.jpg" class="thumbnail">
+				</label>
 
-			<label class="avatara-radio" for="krishna-avatara">
-				<input id="krishna-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='krishna-desktop' value="/images/krishna_avatara.jpg"/>
-				<img src="/images/krishna_avatara.jpg" class="thumbnail">	
-			</label>
+				<label class="avatara-radio" for="krishna-avatara">
+					<input id="krishna-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='krishna-desktop' value="/images/krishna_avatara.jpg"/>
+					<img src="/images/krishna_avatara.jpg" class="thumbnail">	
+				</label>
 
-			<label class="avatara-radio" for="buddha-avatara">
-				<input id="buddha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='buddha-desktop' value="/images/buddha_avatara.jpg"/>
-				<img src="/images/buddha_avatara.jpg" class="thumbnail">
-			</label>
+				<label class="avatara-radio" for="buddha-avatara">
+					<input id="buddha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='buddha-desktop' value="/images/buddha_avatara.jpg"/>
+					<img src="/images/buddha_avatara.jpg" class="thumbnail">
+				</label>
 
-			<label class="avatara-radio" for="kalki-avatara">
-				<input id="kalki-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='kalki-desktop' value="/images/kalki_avatara.jpg"/>
-				<img src="/images/kalki_avatara.jpg" class="thumbnail">
-			</label>
-		</div>
+				<label class="avatara-radio" for="kalki-avatara">
+					<input id="kalki-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='kalki-desktop' value="/images/kalki_avatara.jpg"/>
+					<img src="/images/kalki_avatara.jpg" class="thumbnail">
+				</label>
+
+			</div>
 		</fieldset>
+
 		<br><br>
 
 		<fieldset class='avatara-select-field'>
 			<legend>Select your Ishta Devata</legend>
 			<p id='select-intro'>Choose your favored deity (इष्टदेवता) from the five form system of Shankaracarya for guidance during your test</p>
-		<div class="devata-select"> 
-			<label class="devata-radio" for="vishnu-devata">
-				<input id="vishnu-devata" type="radio" name="devata-radio" class='vishnu trigger' data-rel='vishnu-desktop' value="/images/vishnu_devata.jpg"/>
-				<img src="/images/vishnu_devata.jpg" class="thumbnail">
-			</label>
+			
+			<!-- radio buttons for selecting devata -->
+			<div class="devata-select"> 
+				<label class="devata-radio" for="vishnu-devata">
+					<input id="vishnu-devata" type="radio" name="devata-radio" class='vishnu trigger' data-rel='vishnu-desktop' value="/images/vishnu_devata.jpg"/>
+					<img src="/images/vishnu_devata.jpg" class="thumbnail">
+				</label>
 
-			<label class="devata-radio" for="shiva-devata">
-				<input id="shiva-devata" type="radio" name="devata-radio" class='shiva trigger' data-rel='shiva-desktop' value="/images/shiva_devata.jpg"/>
-				<img src="/images/shiva_devata.jpg" class="thumbnail">
-			</label>
+				<label class="devata-radio" for="shiva-devata">
+					<input id="shiva-devata" type="radio" name="devata-radio" class='shiva trigger' data-rel='shiva-desktop' value="/images/shiva_devata.jpg"/>
+					<img src="/images/shiva_devata.jpg" class="thumbnail">
+				</label>
 
-			<label class="devata-radio" for="ganesha-devata">
-				<input id="ganesha-devata" type="radio" name="devata-radio" class='ganesha trigger' data-rel='ganesha-desktop' value="/images/ganesha_devata.jpg"/>
-				<img src="/images/ganesha_devata.jpg" class="thumbnail">
-			</label>
+				<label class="devata-radio" for="ganesha-devata">
+					<input id="ganesha-devata" type="radio" name="devata-radio" class='ganesha trigger' data-rel='ganesha-desktop' value="/images/ganesha_devata.jpg"/>
+					<img src="/images/ganesha_devata.jpg" class="thumbnail">
+				</label>
 
-			<label class="devata-radio" for="devi-devata">
-				<input id="devi-devata" type="radio" name="devata-radio" class='devi trigger' data-rel='devi-desktop' value="/images/devi_devata.jpg"/>
-				<img src="/images/devi_devata.jpg" class="thumbnail">
-			</label>
+				<label class="devata-radio" for="devi-devata">
+					<input id="devi-devata" type="radio" name="devata-radio" class='devi trigger' data-rel='devi-desktop' value="/images/devi_devata.jpg"/>
+					<img src="/images/devi_devata.jpg" class="thumbnail">
+				</label>
 
-			<label class="devata-radio" for="surya-devata">
-				<input id="surya-devata" type="radio" name="devata-radio" class='surya trigger' data-rel='surya-desktop' value="/images/surya_devata.jpg"/>
-				<img src="/images/surya_devata.jpg" class="thumbnail">
-			</label>
-		</div>
+				<label class="devata-radio" for="surya-devata">
+					<input id="surya-devata" type="radio" name="devata-radio" class='surya trigger' data-rel='surya-desktop' value="/images/surya_devata.jpg"/>
+					<img src="/images/surya_devata.jpg" class="thumbnail">
+				</label>
+			</div>
 		</fieldset>
 
 			<br>
 
+			<!-- the button for submitting the form -->
 			<div id="profileedit-button">
 				<input type='submit' value='Submit Edit' class='continue-button'>
 			</div>
@@ -173,11 +186,14 @@
 
 		<br><br>
 
+		<!-- the descriptions for the avataras and devatas that appear when each radio button is selected -->
 		<div class="avatara-descp">
+
 			<div class="matsya-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/matsya_avatara.jpg" class="bigpic">
 				</div>
+
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Matsya (मत्स्य): The first avatara of Vishnu, Matsya (literally meaning "fish") was a giant fish that rescued the hero Manu from
 					the great flood that killed all living things. He is depicted either as a giant fish or as a half-man, half-fish with the half-man 
@@ -186,6 +202,7 @@
 					potential connections between these stories has tantalized scholars for centuries.
 				</div>
 			</div>
+
 			<div class="kurma-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/kurma_avatara.jpg" class="bigpic">
@@ -197,6 +214,7 @@
 					to churn the ocean and deliever up to the amrita.
 				</div>
 			</div>
+
 			<div class="varaha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/varaha_avatara.jpg" class="bigpic">
@@ -208,6 +226,7 @@
 					 form of a giant boar, slays Hiranyaksha, and raises the earth back to the heavens on his tusks.
 				</div>
 			</div>
+
 			<div class="narasimha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/narasimha_avatara.jpg" class="bigpic">
@@ -219,6 +238,7 @@
 					Vishnu appears as Narasimha (neither man nor animal) and slays Hiranyakshipu.
 				</div>
 			</div>
+
 			<div class="vamana-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/vamana_avatara.jpg" class="bigpic">
@@ -230,6 +250,7 @@
 					two steps.
 				</div>
 			</div>
+
 			<div class="parashurama-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/parashurama_avatara.jpg" class="bigpic">
@@ -240,7 +261,8 @@
 					Parashurama killed Kartavirya and in retaliation the other kshatriyas killed Parashurama's father. Enraged, Parashurama proceed to hunt down and kill
 					all the kshatriyas he could find.
 				</div>
-			</div>	
+			</div>
+
 			<div class="rama-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/rama_avatara.jpg" class="bigpic">
@@ -252,6 +274,7 @@
 					and the monkey warrior Hanuman, Rama slays Ravana and returns home as king along with Sita.
 				</div>
 			</div>
+			
 			<div class="krishna-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/krishna_avatara.jpg" class="bigpic">
@@ -262,7 +285,8 @@
 					his universal form (visvarupa) to Arjuna in the Mahabharata while exhorting Arjuna to follow his personal dharma as a warrior. This 
 					episode is the world famous Bhagavad Gita.
 				</div>
-			</div>	
+			</div>
+
 			<div class="buddha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/buddha_avatara.jpg" class="bigpic">
@@ -273,6 +297,7 @@
 					the Buddha of Buddhism, is an avatara of Vishnu. Why and when this became the case have been debated for centuries and continue to be so today.
 				</div>
 			</div>
+
 			<div class="kalki-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/kalki_avatara.jpg" class="bigpic">
@@ -282,6 +307,7 @@
 					world.  He is traditionally depicted astride a white horse and brandishing a flaming sword in his left hand.
 				</div>
 			</div>
+
 			<div class="vishnu-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/vishnu_devata.jpg" class="bigpic">
@@ -292,6 +318,7 @@
 					emanating the universe.  In his four arms he is seen carrying a conch, a throwing disc, a mace, and a lotus.
 				</div>
 			</div>
+
 			<div class="shiva-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/shiva_devata.jpg" class="bigpic">
@@ -303,6 +330,7 @@
 					hair is a crescent moon and from his hair glows the Ganga river.
 				</div>
 			</div>
+
 			<div class="ganesha-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/ganesha_devata.jpg" class="bigpic">
@@ -313,6 +341,7 @@
 					reason he is the transcriber of the epic Mahabharata.  Ganesha's birthday is celebrated with the massively popular Ganesh Cathurthi.
 				</div>
 			</div>
+
 			<div class="devi-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/devi_devata.jpg" class="bigpic">
@@ -324,6 +353,7 @@
 					celebrated throughout India.
 				</div>
 			</div>
+
 			<div class="surya-desktop content">
 				<div class="avatar-descp-img">
 					<img src="/images/surya_devata.jpg" class="bigpic">
@@ -334,17 +364,17 @@
 					Manu the father of mankind falling the great deluge. 
 				</div>
 			</div>
+
 		</div>
 
 		<br>
-
 
 	<!-- if user is not logged, ask them to sign up or log in -->
 	<?php else: ?>
 
 		<div class="landing-nouser">
 			<fieldset>
-				<legend><h1>भो:! Welcome! भो:!</h1></legend>
+				<legend>भो:! Welcome! भो:!</legend>
 				
 					<p class='intro'>
 						For centuries, Devanagari (देवनागरी) has been the primary script for billions across South Asia. Devanagari Pariksha (Devanagari test) is your first step towards accessing South Asia's rich textual and cultural traditions. The test format is a memory card flipping game. For each round, you start with 1000 points and lose points for every second and click it takes to complete the page. Efficiency and quickness are the key to learning!
@@ -355,5 +385,6 @@
 					<a href='/users/signup' class='continue-button' data-intro="If this is your first time, please login so you can track your progress" data-position="left">Sign Up</a>   <a href='/users/login' class='continue-button' data-intro="If you have been here before, please log in" data-position="right">Log In</a>
 			
 			</fieldset>
+		</div>
 
 	<?php endif; ?>

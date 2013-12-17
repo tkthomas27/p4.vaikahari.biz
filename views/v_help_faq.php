@@ -31,15 +31,15 @@
 				Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
 				Simple Vowels:
 				<ul>
-					<li><img src="/images/devnag/vowel_a.png" class="help-img"> = a as in "a"head</li>
-					<li><img src="/images/devnag/vowel_aa.png" class="help-img"> =aa as in "a"rm</li>
-					<li><img src="/images/devnag/vowel_i.png" class="help-img"> =i as in "i"t</li>
-					<li><img src="/images/devnag/vowel_ii.png" class="help-img"> =ii as in "i"f</li>
-					<li><img src="/images/devnag/vowel_u.png" class="help-img"> =u as in p"u"t</li>
-					<li><img src="/images/devnag/vowel_uu.png" class="help-img"> =uu as in sp"oo"n</li>
-					<li><img src="/images/devnag/vowel_r.png" class="help-img"> =r as in "ri"ddle</li>
-					<li><img src="/images/devnag/vowel_rr.png" class="help-img"> =rr as in "ree"d</li>
-					<li><img src="/images/devnag/vowel_lr.png" class="help-img"> =lr a l sound attached to r</li>
+					<li><img src="/images/devnag/vowel_a.png" class="help-img" alt='vowel a'> = a as in "a"head</li>
+					<li><img src="/images/devnag/vowel_aa.png" class="help-img" alt='vowel aa'> =aa as in "a"rm</li>
+					<li><img src="/images/devnag/vowel_i.png" class="help-img" alt='vowel i'> =i as in "i"t</li>
+					<li><img src="/images/devnag/vowel_ii.png" class="help-img" alt='vowel ii'> =ii as in "i"f</li>
+					<li><img src="/images/devnag/vowel_u.png" class="help-img" alt='vowel u'> =u as in p"u"t</li>
+					<li><img src="/images/devnag/vowel_uu.png" class="help-img" alt='vowel uu'> =uu as in sp"oo"n</li>
+					<li><img src="/images/devnag/vowel_r.png" class="help-img" alt='vowel r'> =r as in "ri"ddle</li>
+					<li><img src="/images/devnag/vowel_rr.png" class="help-img" alt='vowel rr'> =rr as in "ree"d</li>
+					<li><img src="/images/devnag/vowel_lr.png" class="help-img" alt='vowel lr'> =lr a l sound attached to r</li>
 				</ul>
 			</div>
 
@@ -47,10 +47,10 @@
 			<div>	
 				Complex Vowels:
 				<ul>
-					<li><img src="/images/devnag/vowel_e.png" class="help-img"> = e as in "a"ge</li>
-					<li><img src="/images/devnag/vowel_ai.png" class="help-img"> = ai pronounced as eye</li>
-					<li><img src="/images/devnag/vowel_o.png" class="help-img"> = o as in g"o"</li>
-					<li><img src="/images/devnag/vowel_au.png" class="help-img"> = au pronounced as Ow</li>
+					<li><img src="/images/devnag/vowel_e.png" class="help-img" alt='vowel e'> = e as in "a"ge</li>
+					<li><img src="/images/devnag/vowel_ai.png" class="help-img" alt='vowel ai'> = ai pronounced as eye</li>
+					<li><img src="/images/devnag/vowel_o.png" class="help-img" alt='vowel o'> = o as in g"o"</li>
+					<li><img src="/images/devnag/vowel_au.png" class="help-img" alt='vowel au'> = au pronounced as Ow</li>
 				</ul>
 			</div>
 
@@ -58,11 +58,11 @@
 			<div>
 			Velar Consonants:
 				<ul>
-					<li><img src="/images/devnag/ka.png" class="help-img"> = ka as in "ca"rpet</li>
-					<li><img src="/images/devnag/kha.png" class="help-img"> = kha as in "kha"ki</li>
-					<li><img src="/images/devnag/ga.png" class="help-img"> = ga as in "g"um</li>
-					<li><img src="/images/devnag/gha.png" class="help-img"> = gha as in "gh"ost</li>
-					<li><img src="/images/devnag/na_velar.png" class="help-img"> = na as in bri"ng"</li>
+					<li><img src="/images/devnag/ka.png" class="help-img" alt='ka'> = ka as in "ca"rpet</li>
+					<li><img src="/images/devnag/kha.png" class="help-img" alt='kha'> = kha as in "kha"ki</li>
+					<li><img src="/images/devnag/ga.png" class="help-img" alt='ga'> = ga as in "g"um</li>
+					<li><img src="/images/devnag/gha.png" class="help-img" alt='gha'> = gha as in "gh"ost</li>
+					<li><img src="/images/devnag/na_velar.png" class="help-img" alt='na'> = na as in bri"ng"</li>
 				</ul>
 			</div>
 
@@ -70,11 +70,11 @@
 			<div>
 				Palatal Consonants:
 				<ul>
-					<li><img src="/images/devnag/ca.png" class="help-img"> = ca as in "ch"uck</li>
-					<li><img src="/images/devnag/cha.png" class="help-img"> = cha as in "ch"arge</li>
-					<li><img src="/images/devnag/ja.png" class="help-img"> = ja as in "j"ug</li>
-					<li><img src="/images/devnag/jha.png" class="help-img"> = jha as in hed"gheh"og</li>
-					<li><img src="/images/devnag/na_palatal.png" class="help-img"> = na as in ca"ny"on</li>
+					<li><img src="/images/devnag/ca.png" class="help-img" alt='ca'> = ca as in "ch"uck</li>
+					<li><img src="/images/devnag/cha.png" class="help-img" alt='cha'> = cha as in "ch"arge</li>
+					<li><img src="/images/devnag/ja.png" class="help-img" alt='ja'> = ja as in "j"ug</li>
+					<li><img src="/images/devnag/jha.png" class="help-img" alt='jha'> = jha as in hed"gheh"og</li>
+					<li><img src="/images/devnag/na_palatal.png" class="help-img" alt='na'> = na as in ca"ny"on</li>
 				</ul>	
 			</div>
 
@@ -82,11 +82,11 @@
 			<div>
 				Retroflex Vowels:
 				<ul>
-					<li><img src="/images/devnag/xta.png" class="help-img"> = xTa as in ca"rt"</li>
-					<li><img src="/images/devnag/xtha.png" class="help-img"> = xTha as in hea"rt-h"eavy</li>
-					<li><img src="/images/devnag/xda.png" class="help-img"> = xDa as in "d"ove</li>
-					<li><img src="/images/devnag/xdha.png" class="help-img"> = xDha as in re"d-h"ot</li>
-					<li><img src="/images/devnag/na_retro.png" class="help-img"> = na as rna</li>
+					<li><img src="/images/devnag/xta.png" class="help-img" alt='xTa'> = xTa as in ca"rt"</li>
+					<li><img src="/images/devnag/xtha.png" class="help-img" alt='xTha'> = xTha as in hea"rt-h"eavy</li>
+					<li><img src="/images/devnag/xda.png" class="help-img" alt='xDa'> = xDa as in "d"ove</li>
+					<li><img src="/images/devnag/xdha.png" class="help-img" alt='xDha'> = xDha as in re"d-h"ot</li>
+					<li><img src="/images/devnag/na_retro.png" class="help-img" alt='na'> = na as rna</li>
 				</ul>
 			</div>
 
@@ -94,11 +94,11 @@
 			<div>
 				Dental Consonants:
 				<ul>
-					<li><img src="/images/devnag/ta.png" class="help-img"> = ta as in "t"iger</li>
-					<li><img src="/images/devnag/tha.png" class="help-img"> = tha as in lig"th-h"eart</li>
-					<li><img src="/images/devnag/da.png" class="help-img"> = da as in "d"own</li>
-					<li><img src="/images/devnag/dha.png" class="help-img"> = dha as in "d"oughnut</li>
-					<li><img src="/images/devnag/na_dental.png" class="help-img"> = na as in "n"o</li>
+					<li><img src="/images/devnag/ta.png" class="help-img" alt='ta'> = ta as in "t"iger</li>
+					<li><img src="/images/devnag/tha.png" class="help-img" alt='tha'> = tha as in lig"th-h"eart</li>
+					<li><img src="/images/devnag/da.png" class="help-img" alt='da'> = da as in "d"own</li>
+					<li><img src="/images/devnag/dha.png" class="help-img" alt='dha'> = dha as in "d"oughnut</li>
+					<li><img src="/images/devnag/na_dental.png" class="help-img" alt='na'> = na as in "n"o</li>
 				</ul>
 			</div>
 
@@ -106,11 +106,11 @@
 			<div>
 				Labial Consonants:
 				<ul>
-					<li><img src="/images/devnag/pa.png" class="help-img"> = pa as in pi"p"e</li>
-					<li><img src="/images/devnag/pha.png" class="help-img"> = pha as in u"ph"ill</li>
-					<li><img src="/images/devnag/ba.png" class="help-img"> = ba as in "b"ird</li>
-					<li><img src="/images/devnag/bha.png" class="help-img"> = bha as in ru"b-h"ard</li>
-					<li><img src="/images/devnag/ma.png" class="help-img"> = ma as in "m"other</li>
+					<li><img src="/images/devnag/pa.png" class="help-img" alt='pa'> = pa as in pi"p"e</li>
+					<li><img src="/images/devnag/pha.png" class="help-img" alt='pha'> = pha as in u"ph"ill</li>
+					<li><img src="/images/devnag/ba.png" class="help-img" alt='ba'> = ba as in "b"ird</li>
+					<li><img src="/images/devnag/bha.png" class="help-img" alt='bha'> = bha as in ru"b-h"ard</li>
+					<li><img src="/images/devnag/ma.png" class="help-img" alt='ma'> = ma as in "m"other</li>
 				</ul>
 			</div>
 
@@ -118,10 +118,10 @@
 			<div>
 				Semi-vowels:
 				<ul>
-					<li><img src="/images/devnag/ya.png" class="help-img"> = ya as in "y"es</li>
-					<li><img src="/images/devnag/ra.png" class="help-img"> = ra as in "r"un</li>
-					<li><img src="/images/devnag/la.png" class="help-img"> = la as in "l"ight</li>
-					<li><img src="/images/devnag/va.png" class="help-img"> = va as in "v"ine</li>
+					<li><img src="/images/devnag/ya.png" class="help-img" alt='ya'> = ya as in "y"es</li>
+					<li><img src="/images/devnag/ra.png" class="help-img" alt='ra'> = ra as in "r"un</li>
+					<li><img src="/images/devnag/la.png" class="help-img" alt='la'> = la as in "l"ight</li>
+					<li><img src="/images/devnag/va.png" class="help-img" alt='va'> = va as in "v"ine</li>
 				</ul>
 			</div>
 
@@ -129,10 +129,10 @@
 			<div>
 				Spirants:
 				<ul>
-					<li><img src="/images/devnag/sha.png" class="help-img"> = sha as in "s"prechen</li>
-					<li><img src="/images/devnag/xsa.png" class="help-img"> = xSha as in cra"sh"ed</li>
-					<li><img src="/images/devnag/sa.png" class="help-img"> = sa as in "s"nake</li>
-					<li><img src="/images/devnag/ha.png" class="help-img"> = ha as in "h"ome</li>
+					<li><img src="/images/devnag/sha.png" class="help-img" alt='sha'> = sha as in "s"prechen</li>
+					<li><img src="/images/devnag/xsa.png" class="help-img" alt='xSha'> = xSha as in cra"sh"ed</li>
+					<li><img src="/images/devnag/sa.png" class="help-img" alt='sa'> = sa as in "s"nake</li>
+					<li><img src="/images/devnag/ha.png" class="help-img" alt='ha'> = ha as in "h"ome</li>
 				</ul>
 			</div>
 	</div>

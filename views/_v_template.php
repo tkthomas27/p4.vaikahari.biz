@@ -73,10 +73,10 @@
 </div>
 
 <!-- jQuery -->
-<script type="text/javascript" charset="utf-8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <!-- jQuery UI -->
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
 
 <!-- flip plugin for quizy plugin -->
 <script type="text/javascript" src="/js/jquery.flip.min.js"></script>
@@ -84,23 +84,23 @@
 <script type="text/javascript" src="/js/jquery.quizymemorygame.js"></script>
 
 <!-- javascript calling the memory game; doesn't seem to work unless it is placed here -->
-<script type="text/javascript" language="javascript">
+<script type="text/javascript" >
 	$('#my-memorygame').quizyMemoryGame({itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:5, animType:'flip' , flipAnim:'tb', animSpeed:150, resultIcons:true});
 </script>
 
 <!-- DataTables plugin -->
-<script type="text/javascript" charset="utf-8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 
 <!-- validate plugin -->
-<script type="text/javascript" charset="utf-8" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 <!-- extras for the validate plugin -->
-<script type="text/javascript" charset="utf-8" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
 
 <!-- chardin plugin -->
-<script src="/js/chardinjs.min.js"></script>
+<script type="text/javascript" src="/js/chardinjs.min.js"></script>
 
 <!-- main javascript -->
-<script src="/js/sample-app.js"></script>
+<script type="text/javascript" src="/js/sample-app.js"></script>
 
 </body>
 </html>

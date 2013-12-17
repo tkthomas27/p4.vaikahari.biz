@@ -13,9 +13,9 @@
 					<span id='login-email'>Email</span><br>
 					<input type='text' name='email' id='login-input' required><br><br>
 					<span id='login-email'>Current Password</span><br>
-					<input type='password' name='password' id='login-input' required><br><br>
+					<input type='password' name='password' id='login-input' maxlength='10' required><br><br>
 					<span id='login-email'>New Password</span><br>
-					<input type="password" name='newpassword' id='login-input' required><br>
+					<input type="password" name='newpassword' id='login-input' maxlength='10' required><br>
 
 					<br>
 

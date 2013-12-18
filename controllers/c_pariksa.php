@@ -25,7 +25,7 @@ class pariksa_controller extends base_controller {
 	}
 
 
-	public function game($user_id = NULL) {
+	public function game() {
 
 		//if user is not logged in, they cannot see the page; route them to the problem page
 		if(!$this->user){
@@ -42,7 +42,7 @@ class pariksa_controller extends base_controller {
 	}
 
 
-	public function p_cont_game($user_id = NULL){
+	public function p_cont_game(){
 
 		//accept the information from the field; tattva is hardcoded in, score is passed into a hidden
 		//input from javascript
@@ -51,16 +51,10 @@ class pariksa_controller extends base_controller {
 		$new_score = $_POST['score'];
 
 		//set incoming data as an array
-		$scoredata = Array('tattva'=>$new_tattva,'date_play'=>$new_date_play);
-
-		//update the score in the users table by adding the score data from the javascript
-		$q_score_update = 
-		'UPDATE users
-		SET score = score + '.$new_score;
+		$scoredata = Array('tattva'=>$new_tattva,'date_play'=>$new_date_play,'score'=>'score'+$new_score);
 
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->update('users',$scoredata,'Where user_id ='.$this->user->user_id);
-		DB::instance(DB_NAME)->query($q_score_update,'Where user_id ='.$this->user->user_id);
 
 		//route the game with updated tattva
 		Router::redirect('/pariksa/game');
@@ -81,7 +75,8 @@ class pariksa_controller extends base_controller {
       		score, 
       		date_play,
       		user_id
-		FROM users';
+		FROM users
+		WHERE user_id ='.$this->user->user_id;
 
 		//use sql to insert game data from users table into scores table
 		DB::instance(DB_NAME)->query($q_submit);
@@ -102,6 +97,7 @@ class pariksa_controller extends base_controller {
 
 	}
 
+	
 	public function p_complete_game(){
 
 		//accept the information from the field

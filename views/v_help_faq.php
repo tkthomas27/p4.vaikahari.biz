@@ -17,19 +17,20 @@
 
 		<h3>How do I pronounce Devanagari?</h3>
 			<div>
-				Devanagari is a abugida alphabet meaning that each consonant has an understood 'a' sound attached to it. The each character is 
-				traditionally shown seen as falling into 5 categories: velar, palatal, retroflex (or cerebral), dental, or labial. Each of these
+				Devanagari is a abugida alphabet meaning that each consonant has an understood 'a' sound attached to it. Each character is 
+				traditionally seen as falling into 5 categories: velar, palatal, retroflex (or cerebral), dental, or labial. Each of these
 				categories correspond to where the sound emanates from your mouth: velar sounds come from the back of the throat, palatal come from 
 				back roof of your mouth, retroflex from the forward roof of your mouth, dental come from the back of the teeth, and labial come from 
-				the lips.
+				the lips.  For the basic sounds of ka, ga, ca, ja, ta/xTa, da/xDa, pa, and ba there are also aspirated versions that do not appear
+				commonly in English pronunciation: kha, gha, cha, jha, tha, xTha, da, xDha, pha, and bha. These are pronounced by emitting a slight
+				puff of air after pronouncing the initial stop.
 				<br>
 				<img src="/images/devnag_map.png" class='devnag-map' alt="">
 			</div>
 
 		<h3>How to Pronounce Simple Vowels</h3>
 			<div>
-				Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-				Simple Vowels:
+				Simple vowels are the basic vowel sounds. Each come in short and long versions. Theoretically is a long lr but it is non-existant
 				<ul>
 					<li><img src="/images/devnag/vowel_a.png" class="help-img" alt='vowel a'> = a as in "a"head</li>
 					<li><img src="/images/devnag/vowel_aa.png" class="help-img" alt='vowel aa'> =aa as in "a"rm</li>
@@ -45,7 +46,8 @@
 
 		<h3>How to Pronounce Complex Vowels</h3>
 			<div>	
-				Complex Vowels:
+				Complex vowels e and o are the dipthongs made from conjoining two basic vowels, a + i and a + u respectively. Ai and Au are the stregthened
+				(guna) of these two 
 				<ul>
 					<li><img src="/images/devnag/vowel_e.png" class="help-img" alt='vowel e'> = e as in "a"ge</li>
 					<li><img src="/images/devnag/vowel_ai.png" class="help-img" alt='vowel ai'> = ai pronounced as eye</li>
@@ -80,7 +82,8 @@
 
 		<h3>How to Pronounce Retroflex Vowels</h3>
 			<div>
-				Retroflex Vowels:
+				Retroflex Consonants are not easy to display in Roman transliteration. For the most part, they sound identical to the more common dental consonants.
+				There are several ways to transliterate them. We have chosen to add an initial x as well as capitalize the first letter that is sounded.
 				<ul>
 					<li><img src="/images/devnag/xta.png" class="help-img" alt='xTa'> = xTa as in ca"rt"</li>
 					<li><img src="/images/devnag/xtha.png" class="help-img" alt='xTha'> = xTha as in hea"rt-h"eavy</li>

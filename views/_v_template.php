@@ -17,6 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 	<!-- Chardin plugin CSS -->
 	<link href="/css/chardinjs.css" rel="stylesheet">
+	<!-- Icon -->
+	<link rel="icon" type="image/ico" href="/images/favicon.ico"></link> 
 					
 </head>
 

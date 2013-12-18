@@ -328,10 +328,10 @@
 					<li class="match6" id='quiz-card'>
 						UU
 					</li>
-					<li class="match5" id='quiz-card'>
+					<li class="match7" id='quiz-card'>
 						<img src="/images/devnag/vowel_r.png" alt="Vowel R" class='mem-card-img'>
 					</li>
-					<li class="match5" id='quiz-card'>
+					<li class="match7" id='quiz-card'>
 						ṛ
 					</li>
 				</ul>

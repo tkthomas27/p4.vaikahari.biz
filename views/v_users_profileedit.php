@@ -83,52 +83,52 @@
 				<!-- radio buttons for selecting the avataras -->
 				<label class="avatara-radio" for="matsya-avatara">
 					<input id="matsya-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='matsya-desktop' value="/images/matsya_avatara.jpg"/>
-					<img src="/images/matsya_avatara.jpg" class="thumbnail">
+					<img src="/images/matsya_avatara.jpg" class="thumbnail" alt='Matsya'>
 				</label>
 
 				<label class="avatara-radio" for="kurma-avatara">
 					<input id="kurma-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='kurma-desktop' value="/images/kurma_avatara.jpg"/>
-					<img src="/images/kurma_avatara.jpg" class="thumbnail">
+					<img src="/images/kurma_avatara.jpg" class="thumbnail" alt='Kurma'>
 				</label>
 
 				<label class="avatara-radio" for="varaha-avatara">
 					<input id="varaha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='varaha-desktop' value="/images/varaha_avatara.jpg"/>
-					<img src="/images/varaha_avatara.jpg" class="thumbnail">
+					<img src="/images/varaha_avatara.jpg" class="thumbnail" alt='Varaha'>
 				</label>
 
 				<label class="avatara-radio" for="narasimha-avatara">
 					<input id="narasimha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='narasimha-desktop' value="/images/narasimha_avatara.jpg"/>
-					<img src="/images/narasimha_avatara.jpg" class="thumbnail">
+					<img src="/images/narasimha_avatara.jpg" class="thumbnail" alt='Narasimha'>
 				</label>
 
 				<label class="avatara-radio" for="vamana-avatara">
 					<input id="vamana-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='vamana-desktop' value="/images/vamana_avatara.jpg"/>
-					<img src="/images/vamana_avatara.jpg" class="thumbnail">
+					<img src="/images/vamana_avatara.jpg" class="thumbnail" alt='Vamana'>
 				</label>
 				<br>
 				<label class="avatara-radio" for="parashurama-avatara">
 					<input id="parashurama-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='parashurama-desktop' value="/images/parashurama_avatara.jpg"/>
-					<img src="/images/parashurama_avatara.jpg" class="thumbnail">
+					<img src="/images/parashurama_avatara.jpg" class="thumbnail" alt='Parashurama'>
 				</label>
 
 				<label class="avatara-radio" for="rama-avatara">
 					<input id="rama-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='rama-desktop' value="/images/rama_avatara.jpg"/>
-					<img src="/images/rama_avatara.jpg" class="thumbnail">
+					<img src="/images/rama_avatara.jpg" class="thumbnail" alt='Rama'>
 				</label>
 
 				<label class="avatara-radio" for="krishna-avatara">
 					<input id="krishna-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='krishna-desktop' value="/images/krishna_avatara.jpg"/>
-					<img src="/images/krishna_avatara.jpg" class="thumbnail">	
+					<img src="/images/krishna_avatara.jpg" class="thumbnail" alt='Krishna'>	
 				</label>
 
 				<label class="avatara-radio" for="buddha-avatara">
 					<input id="buddha-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='buddha-desktop' value="/images/buddha_avatara.jpg"/>
-					<img src="/images/buddha_avatara.jpg" class="thumbnail">
+					<img src="/images/buddha_avatara.jpg" class="thumbnail" alt='Buddha'>
 				</label>
 
 				<label class="avatara-radio" for="kalki-avatara">
 					<input id="kalki-avatara" type="radio" name="avatara-radio" class='trigger' data-rel='kalki-desktop' value="/images/kalki_avatara.jpg"/>
-					<img src="/images/kalki_avatara.jpg" class="thumbnail">
+					<img src="/images/kalki_avatara.jpg" class="thumbnail" alt='Kalki alt='''>
 				</label>
 
 			</div>
@@ -144,27 +144,27 @@
 			<div class="devata-select"> 
 				<label class="devata-radio" for="vishnu-devata">
 					<input id="vishnu-devata" type="radio" name="devata-radio" class='vishnu trigger' data-rel='vishnu-desktop' value="/images/vishnu_devata.jpg"/>
-					<img src="/images/vishnu_devata.jpg" class="thumbnail">
+					<img src="/images/vishnu_devata.jpg" class="thumbnail" alt='Vishnu'>
 				</label>
 
 				<label class="devata-radio" for="shiva-devata">
 					<input id="shiva-devata" type="radio" name="devata-radio" class='shiva trigger' data-rel='shiva-desktop' value="/images/shiva_devata.jpg"/>
-					<img src="/images/shiva_devata.jpg" class="thumbnail">
+					<img src="/images/shiva_devata.jpg" class="thumbnail" alt='Shiva'>
 				</label>
 
 				<label class="devata-radio" for="ganesha-devata">
 					<input id="ganesha-devata" type="radio" name="devata-radio" class='ganesha trigger' data-rel='ganesha-desktop' value="/images/ganesha_devata.jpg"/>
-					<img src="/images/ganesha_devata.jpg" class="thumbnail">
+					<img src="/images/ganesha_devata.jpg" class="thumbnail" alt='Ganesha'>
 				</label>
 
 				<label class="devata-radio" for="devi-devata">
 					<input id="devi-devata" type="radio" name="devata-radio" class='devi trigger' data-rel='devi-desktop' value="/images/devi_devata.jpg"/>
-					<img src="/images/devi_devata.jpg" class="thumbnail">
+					<img src="/images/devi_devata.jpg" class="thumbnail" alt='Devi'>
 				</label>
 
 				<label class="devata-radio" for="surya-devata">
 					<input id="surya-devata" type="radio" name="devata-radio" class='surya trigger' data-rel='surya-desktop' value="/images/surya_devata.jpg"/>
-					<img src="/images/surya_devata.jpg" class="thumbnail">
+					<img src="/images/surya_devata.jpg" class="thumbnail" alt='Surya alt='''>
 				</label>
 			</div>
 		</fieldset>
@@ -191,7 +191,7 @@
 
 			<div class="matsya-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/matsya_avatara.jpg" class="bigpic">
+					<img src="/images/matsya_avatara.jpg" class="bigpic" alt='Matsya'>
 				</div>
 
 				<div class="avatar-descp-text" id='select-side-descp'>
@@ -205,7 +205,7 @@
 
 			<div class="kurma-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/kurma_avatara.jpg" class="bigpic">
+					<img src="/images/kurma_avatara.jpg" class="bigpic" alt='Kurma'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Kurma (कुर्म): The second avatara of Vishnu, he was the turtle form taken on by Vishnu to aid in the churning of the ocean of milk (the 
@@ -217,7 +217,7 @@
 
 			<div class="varaha-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/varaha_avatara.jpg" class="bigpic">
+					<img src="/images/varaha_avatara.jpg" class="bigpic" alt='Varaha'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Varaha (वराह): The third avatara of Vishnu is responsible for rescuing the world when it was cast into the primordial ocean by the demon
@@ -229,7 +229,7 @@
 
 			<div class="narasimha-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/narasimha_avatara.jpg" class="bigpic">
+					<img src="/images/narasimha_avatara.jpg" class="bigpic" alt='Narasimha'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Narasimha (नरसिंह): The fourth avatara of Vishnu, Narasimha (literally, "man-lion") is responsible for killing the demon Hiranyakshipu.
@@ -241,7 +241,7 @@
 
 			<div class="vamana-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/vamana_avatara.jpg" class="bigpic">
+					<img src="/images/vamana_avatara.jpg" class="bigpic" alt='Vamana'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Vamana (वामन): The fifth avatara of Vishnu, Vamana reclaimed the world for the gods after it had been taken over by the benevolent but 
@@ -253,7 +253,7 @@
 
 			<div class="parashurama-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/parashurama_avatara.jpg" class="bigpic">
+					<img src="/images/parashurama_avatara.jpg" class="bigpic" alt='Parashurama'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Parashurama (परशुराम): The sixth avatara of Vishnu, Parashurama ('Axe-Rama') was an immortal warrior who killed all the kshatriyas (kings) 21 times over.
@@ -265,7 +265,7 @@
 
 			<div class="rama-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/rama_avatara.jpg" class="bigpic">
+					<img src="/images/rama_avatara.jpg" class="bigpic" alt='Rama'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Rama (राम): The seventh avatara of Vishnu, Rama is most well known as the hero of the Ramayana. In his relentless adherence to Dharma, 
@@ -277,7 +277,7 @@
 			
 			<div class="krishna-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/krishna_avatara.jpg" class="bigpic">
+					<img src="/images/krishna_avatara.jpg" class="bigpic" alt='Krishna alt='''>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Krishna (कृष्ण): The eighth avatara of Vishnu, Krishna is the full incarnation of Vishnu. In his youth, Krishna's mischief as a child and
@@ -289,7 +289,7 @@
 
 			<div class="buddha-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/buddha_avatara.jpg" class="bigpic">
+					<img src="/images/buddha_avatara.jpg" class="bigpic" alt='Buddha'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Buddha (बुद्ध): The ninth avatara of Vishnu is, with some controversy, the Buddha. There is some confusion particularly regarding the
@@ -300,7 +300,7 @@
 
 			<div class="kalki-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/kalki_avatara.jpg" class="bigpic">
+					<img src="/images/kalki_avatara.jpg" class="bigpic" alt='Kalki'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Kalki (कल्कि): The tenth and final avatara of Vishnu, Kalki has not yeat appeared and when he arrives he will usher in the end of the current
@@ -310,7 +310,7 @@
 
 			<div class="vishnu-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/vishnu_devata.jpg" class="bigpic">
+					<img src="/images/vishnu_devata.jpg" class="bigpic" alt='Vishnu'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Vishnu (विष्णु): Vishnu enjoys a rich and varied legacy in South and Southeast Asia. He is identified as the supreme lord of everything and all
@@ -321,7 +321,7 @@
 
 			<div class="shiva-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/shiva_devata.jpg" class="bigpic">
+					<img src="/images/shiva_devata.jpg" class="bigpic" alt='Shiva'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Shiva (शिव): Shiva is an extremely popular deity who is considered the supreme god in Shaiva traditions. Shiva has exprienced a long evolution
@@ -333,7 +333,7 @@
 
 			<div class="ganesha-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/ganesha_devata.jpg" class="bigpic">
+					<img src="/images/ganesha_devata.jpg" class="bigpic" alt='Ganesha'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Ganesha (गणेश): Ganesha is a tremendously popular deity in South Asia who is seen as the remover of obstacles. In various stories he is the son
@@ -344,7 +344,7 @@
 
 			<div class="devi-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/devi_devata.jpg" class="bigpic">
+					<img src="/images/devi_devata.jpg" class="bigpic" alt='Devi'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Devi (देवी): Devi is the general term for the divine energy that animats all of the Hindu goddesses. One of the more popular aspects of Devi
@@ -356,7 +356,7 @@
 
 			<div class="surya-desktop content">
 				<div class="avatar-descp-img">
-					<img src="/images/surya_devata.jpg" class="bigpic">
+					<img src="/images/surya_devata.jpg" class="bigpic" alt='Surya'>
 				</div>
 				<div class="avatar-descp-text" id='select-side-descp'>
 					Surya (शूर्य): Surya, meaning the Sun, has a close relationship to ancient solar forms of solar worship throughout Asia. Surya is the father

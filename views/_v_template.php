@@ -102,7 +102,7 @@
 <script type="text/javascript" src="/js/chardinjs.min.js"></script>
 
 <!-- main javascript -->
-<script type="text/javascript" src="/js/sample-app.js"></script>
+<script type="text/javascript" src="/js/devnag.js"></script>
 
 </body>
 </html>

@@ -149,6 +149,12 @@ class users_controller extends base_controller {
 
 	public function p_profileedit() {
 
+		//if user is not logged in, they cannot see the page
+		if(!$this->user){
+			//redirect the nonuser to the problem page
+			die(Router::redirect('/users/problem'));
+		}
+
 		//accept the information from the field
 		$new_city = $_POST['city'];
 		$new_state = $_POST['state'];

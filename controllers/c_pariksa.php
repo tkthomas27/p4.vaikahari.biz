@@ -8,6 +8,12 @@ class pariksa_controller extends base_controller {
 
 	public function p_init_game(){
 
+
+		//prevent users from going to the P_init_game without clicking on the button
+		if($_POST['tattva'] == ''){
+			die(Router::redirect('/users/problem'));
+		}
+
 		//initialize a new game on start game button click
 		//insert the current time and to tattva selected by the radio buttons on the main page
 		$new_date_play=Time::now();
@@ -43,6 +49,11 @@ class pariksa_controller extends base_controller {
 
 
 	public function p_cont_game(){
+
+		//prevent users from going to the p_cont_game without clicking on the button
+		if($_POST['score'] == ''){
+			die(Router::redirect('/users/problem'));
+		}
 
 		//accept the information from the field; tattva is hardcoded in, score is passed into a hidden
 		//input from javascript
@@ -100,6 +111,7 @@ class pariksa_controller extends base_controller {
 	
 	public function p_complete_game(){
 
+		//prevent users from going to the p_complete_game without clicking on the button
 		if($_POST['score'] == ''){
 			die(Router::redirect('/users/problem'));
 		}

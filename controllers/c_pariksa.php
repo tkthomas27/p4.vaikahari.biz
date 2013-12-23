@@ -74,6 +74,11 @@ class pariksa_controller extends base_controller {
 
 	public function p_quit_game(){
 
+		//prevent users from going to the P_init_game without clicking on the button
+		if($_POST['tattva'] == ''){
+			die(Router::redirect('/users/problem'));
+		}
+
 		//create a query that will select all relevant game data
 		$q_submit = 
 		'INSERT INTO scores ( 

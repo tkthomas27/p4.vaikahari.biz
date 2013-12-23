@@ -105,6 +105,11 @@ class pariksa_controller extends base_controller {
 		$new_date_play =Time::now();
 		$new_score = $_POST['score'];
 
+		//prevent user from navigating to p_
+		if($new_score = ''){
+			die(Router::redirect('/users/problem'));
+		}
+
 		//set incoming data as an array
 		$scoredata = Array('tattva'=>$new_tattva,'date_play'=>$new_date_play);
 

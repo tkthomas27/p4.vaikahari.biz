@@ -100,15 +100,14 @@ class pariksa_controller extends base_controller {
 	
 	public function p_complete_game(){
 
+		if($_POST['score'] == ''){
+			die(Router::redirect('/users/problem'));
+		}
+
 		//accept the information from the field
 		$new_tattva = $_POST['tattva'];
 		$new_date_play =Time::now();
 		$new_score = $_POST['score'];
-
-		//prevent user from navigating to p_
-		if($new_tattva = NULL){
-			die(Router::redirect('/users/problem'));
-		}
 
 		//set incoming data as an array
 		$scoredata = Array('tattva'=>$new_tattva,'date_play'=>$new_date_play);

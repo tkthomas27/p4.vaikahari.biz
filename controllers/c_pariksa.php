@@ -68,6 +68,7 @@ class pariksa_controller extends base_controller {
 
 	}
 
+
 	public function p_quit_game(){
 
 		//create a query that will select all relevant game data
@@ -124,35 +125,7 @@ class pariksa_controller extends base_controller {
 		DB::instance(DB_NAME)->update('users',$scoredata,'Where user_id ='.$this->user->user_id);
 		DB::instance(DB_NAME)->query($q_score_update,'Where user_id ='.$this->user->user_id);
 
-		//setup a query to move game data from the user table to the scores table
-		$q_submit = 
-		'INSERT INTO scores ( 
-      		tattva, 
-      		score, 
-      		date_play,
-      		user_id)
-		SELECT       		
-			tattva, 
-      		score, 
-      		date_play,
-      		user_id
-		FROM users';
-
-		//use sql to send data from users to scores
-		DB::instance(DB_NAME)->query($q_submit);
-
-		//reset the game data in the user table to blanks
-		$del_score = '';
-		$del_date_play ='';
-		$del_tattva = '';
-
-		//pass above data to an arrays
-		$deldata = Array('tattva'=>$del_tattva,'date_play'=>$del_date_play,'score'=>$del_score);
-
-		//use sql to update the DB with the information stored in the array above
-		DB::instance(DB_NAME)->update('users',$deldata,'Where user_id ='.$this->user->user_id);
-
-		Router::redirect("/");
+		Router::redirect("/pariksa/p_quit_game");
 
 	}
 

@@ -54,8 +54,14 @@ class pariksa_controller extends base_controller {
 		//set incoming data as an array
 		$scoredata = Array('tattva'=>$new_tattva,'date_play'=>$new_date_play,'score'=>'score'+$new_score);
 
+		//update the scoredata by adding in the data from javascript
+		$q_score_update = 
+		'UPDATE users
+		SET score = score + '.$new_score;
+
 		//use sql to update the DB with the information stored in the array above
 		DB::instance(DB_NAME)->update('users',$scoredata,'Where user_id ='.$this->user->user_id);
+		DB::instance(DB_NAME)->query($q_score_update,'Where user_id ='.$this->user->user_id);
 
 		//route the game with updated tattva
 		Router::redirect('/pariksa/game');

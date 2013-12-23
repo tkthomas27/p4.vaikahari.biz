@@ -106,7 +106,7 @@ class pariksa_controller extends base_controller {
 		$new_score = $_POST['score'];
 
 		//prevent user from navigating to p_
-		if($new_score = ''){
+		if($new_tattva = NULL){
 			die(Router::redirect('/users/problem'));
 		}
 
